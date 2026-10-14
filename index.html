@@ -768,7 +768,7 @@ function qcard(q,opt){
     +fb
     +'<div class="q-ans'+ansOpen+'"><div class="ans-line"><b>答案：</b>'+renderTex(ansTxt)+'</div></div>'
     +'<div class="q-solbox'+solOpen+'">'+solHtml+'</div>'
-    +'<div class="q-know'+knowOpen+'"><div class="know-box"><div class="know-title">核心知识点</div><div class="know-text">'+renderTex(q.knowledge||generateKnowledge(q))+'</div></div></div>'
+    +'<div class="q-know'+knowOpen+'"><div class="know-box"><div class="know-title">核心知识点</div><div class="know-text">'+renderTex(q.knowledge||generateKnowledge(q))+'</div></div>'+(q.tips?'<div class="know-box" style="margin-top:10px"><div class="know-title" style="color:var(--cyan)">答题技巧</div><div class="know-text">'+renderTex(q.tips)+'</div></div>':'')+'</div>'
     +'</article>';
 }
 
@@ -1081,6 +1081,7 @@ route();
 </script>
 </body>
 </html>
+
 
 
 
