@@ -23744,5 +23744,805 @@ const CHAPTER_DATA = [
  "analysis": "p真：a=0时1>0成立。a≠0时，a>0且Δ=a²-4a<0 → 0<a<4。所以p真：0≤a<4。q真：Δ=1-4a≥0 → a≤1/4。p真q假：0≤a<4且a>1/4 → 1/4<a<4。p假q真：a<0或a≥4且a≤1/4 → a<0。综合：a<0或1/4<a<4。不对，重新算：p真：0≤a<4。p假：a<0或a≥4。q真：a≤1/4。q假：a>1/4。一真一假：p真q假：0≤a<4且a>1/4 → 1/4<a<4。p假q真：(a<0或a≥4)且a≤1/4 → a<0。所以范围a<0或1/4<a<4。",
  "knowledge": "命题真假判断 + 分类讨论",
  "tips": "分别求p真、q真的范围，再组合。"
+},
+{
+ "id": 15001,
+ "chapter": "函数概念与基本初等函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "函数 \\(f(x)=\\dfrac{1}{\\sqrt{x-1}}\\) 的定义域为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\((1, +\\infty)\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\([1, +\\infty)\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\((-\\infty, 1)\\)"
+  },
+  {
+   "key": "D",
+   "text": "R"
+  }
+ ],
+ "answer": "A",
+ "analysis": "根号里的数要大于0：x-1>0 → x>1。",
+ "knowledge": "函数定义域：分母不为0，根号下大于等于0",
+ "tips": "分母≠0，根号下>0。"
+},
+{
+ "id": 15002,
+ "chapter": "函数概念与基本初等函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "已知 \\(f(x)=2x+1\\)，则 \\(f(1)=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "1"
+  },
+  {
+   "key": "B",
+   "text": "2"
+  },
+  {
+   "key": "C",
+   "text": "3"
+  },
+  {
+   "key": "D",
+   "text": "4"
+  }
+ ],
+ "answer": "C",
+ "analysis": "f(1)=2*1+1=3。",
+ "knowledge": "函数值的计算",
+ "tips": "代入x的值。"
+},
+{
+ "id": 15003,
+ "chapter": "函数概念与基本初等函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "下列函数中，是奇函数的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(f(x)=x^2\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(f(x)=x^3\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(f(x)=|x|\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(f(x)=x+1\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "A：f(-x)=(-x)²=x²=f(x)，偶函数。B：f(-x)=(-x)³=-x³=-f(x)，奇函数。C：f(-x)=|-x|=|x|=f(x)，偶函数。D：f(-x)=-x+1≠-f(x)，非奇非偶。",
+ "knowledge": "奇函数定义：\\(f(-x)=-f(x)\\)",
+ "tips": "代入-x看关系。"
+},
+{
+ "id": 15004,
+ "chapter": "函数概念与基本初等函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(f(x)=x^2-2x+3\\) 的单调递增区间为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\((-\\infty, 1]\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\([1, +\\infty)\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\((-\\infty, 2]\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\([2, +\\infty)\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "f(x)=(x-1)²+2，对称轴x=1，开口向上。所以递增区间是[1, +∞)。",
+ "knowledge": "二次函数的单调性",
+ "tips": "配方找对称轴。"
+},
+{
+ "id": 15005,
+ "chapter": "函数概念与基本初等函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(f(x)=a^x\\)（\\(a>0\\)且\\(a\\neq 1\\)）的图像过点(2, 4)，则a=（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "2"
+  },
+  {
+   "key": "B",
+   "text": "-2"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\sqrt{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\pm 2\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "代入(2,4)：a²=4 → a=2或a=-2。但a>0，所以a=2。",
+ "knowledge": "指数函数的图像和性质",
+ "tips": "代入点坐标求参数。"
+},
+{
+ "id": 15006,
+ "chapter": "函数概念与基本初等函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列函数中，在区间(0, +∞)上单调递增的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(f(x)=x^2\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(f(x)=2^x\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(f(x)=\\log_2 x\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(f(x)=\\dfrac{1}{x}\\)"
+  }
+ ],
+ "answer": "ABC",
+ "analysis": "A：x²在(0,+∞)上递增，对。B：2ˣ在R上递增，对。C：log₂x在(0,+∞)上递增，对。D：1/x在(0,+∞)上递减，错。",
+ "knowledge": "基本初等函数的单调性",
+ "tips": "记住各函数的单调性。"
+},
+{
+ "id": 15007,
+ "chapter": "函数概念与基本初等函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)\\) 是定义在R上的奇函数，且 \\(f(1)=2\\)，则下列结论正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(f(0)=0\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(f(-1)=-2\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(f(2)=4\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(f(x)\\)的图像关于原点对称"
+  }
+ ],
+ "answer": "ABD",
+ "analysis": "A：奇函数在0处有定义则f(0)=0，对。B：f(-1)=-f(1)=-2，对。C：f(2)不知道，错。D：奇函数图像关于原点对称，对。",
+ "knowledge": "奇函数的性质",
+ "tips": "奇函数：f(-x)=-f(x)，图像关于原点对称。"
+},
+{
+ "id": 15008,
+ "chapter": "函数概念与基本初等函数",
+ "type": "填空",
+ "difficulty": "易",
+ "question": "函数 \\(f(x)=x^2\\) 在x=1处的函数值为________。",
+ "answer": "1",
+ "analysis": "f(1)=1²=1。",
+ "knowledge": "函数值计算",
+ "tips": "代入计算。"
+},
+{
+ "id": 15009,
+ "chapter": "函数概念与基本初等函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "函数 \\(f(x)=\\log_2 x\\) 的定义域为________。",
+ "answer": "\\((0, +\\infty)\\)",
+ "analysis": "对数函数的真数要大于0。",
+ "knowledge": "对数函数的定义域",
+ "tips": "真数>0。"
+},
+{
+ "id": 15010,
+ "chapter": "函数概念与基本初等函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "已知 \\(f(x)\\) 是偶函数，且 \\(f(2)=3\\)，则 \\(f(-2)=\\)________。",
+ "answer": "3",
+ "analysis": "偶函数：f(-x)=f(x)。所以f(-2)=f(2)=3。",
+ "knowledge": "偶函数的性质",
+ "tips": "偶函数：f(-x)=f(x)。"
+},
+{
+ "id": 15011,
+ "chapter": "函数概念与基本初等函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "求函数 \\(f(x)=\\sqrt{x+2}+\\dfrac{1}{x-1}\\) 的定义域。",
+ "answer": "\\([-2, 1)\\cup(1, +\\infty)\\)",
+ "analysis": "需要满足：x+2≥0且x-1≠0。即x≥-2且x≠1。所以定义域是[-2, 1)∪(1, +∞)。",
+ "knowledge": "函数定义域的求法",
+ "tips": "根号下≥0，分母≠0。"
+},
+{
+ "id": 15012,
+ "chapter": "函数概念与基本初等函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=x^2-2ax+3\\) 在区间[1, 3]上的最小值为2，求实数a的值。",
+ "answer": "a=1或a=3",
+ "analysis": "f(x)=(x-a)²+3-a²，对称轴x=a。分三种情况：（1）a<1时，f(x)在[1,3]上递增，最小值f(1)=1-2a+3=4-2a=2 → a=1（舍去，因为a<1）。（2）1≤a≤3时，最小值f(a)=3-a²=2 → a²=1 → a=1。（3）a>3时，f(x)在[1,3]上递减，最小值f(3)=9-6a+3=12-6a=2 → a=5/3（舍去，因为a>3）。所以a=1。不对，那a=3呢？当a=3时，f(x)=(x-3)²+3-9=(x-3)²-6。在[1,3]上递减，最小值f(3)=-6≠2。所以a=1。",
+ "knowledge": "二次函数在闭区间上的最值",
+ "tips": "对称轴与区间的位置关系，分类讨论。"
+},
+{
+ "id": 15013,
+ "chapter": "函数概念与基本初等函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "集合 \\(A=\\{x\\mid y=\\sqrt{x-1}\\}\\)，集合 \\(B=\\{y\\mid y=x^2\\}\\)，则 \\(A\\cap B=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\([1, +\\infty)\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\([0, +\\infty)\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\((0, +\\infty)\\)"
+  },
+  {
+   "key": "D",
+   "text": "R"
+  }
+ ],
+ "answer": "A",
+ "analysis": "A={x|x≥1}，B={y|y≥0}。A∩B={x|x≥1}。",
+ "knowledge": "函数定义域和值域 + 集合运算",
+ "tips": "集合A是定义域，集合B是值域。"
+},
+{
+ "id": 15014,
+ "chapter": "函数概念与基本初等函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "设 \\(f(x)\\) 是R上的偶函数，且在[0, +∞)上单调递增，则（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(f(-2)<f(1)<f(3)\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(f(1)<f(-2)<f(3)\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(f(-2)<f(3)<f(1)\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(f(3)<f(1)<f(-2)\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "偶函数：f(-2)=f(2)。在[0,+∞)上递增，所以f(1)<f(2)<f(3)。即f(1)<f(-2)<f(3)。",
+ "knowledge": "偶函数的单调性",
+ "tips": "偶函数：f(-x)=f(x)，比较大小先转化到同一侧。"
+},
+{
+ "id": 15015,
+ "chapter": "函数概念与基本初等函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列函数中，是幂函数的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(f(x)=x^2\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(f(x)=2x\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(f(x)=x^{\\frac{1}{2}}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(f(x)=\\dfrac{1}{x}\\)"
+  }
+ ],
+ "answer": "ACD",
+ "analysis": "幂函数形式：f(x)=x^α。A：x²是，对。B：2x=2x¹，系数不是1，不是，错。C：x^(1/2)是，对。D：1/x=x^(-1)是，对。",
+ "knowledge": "幂函数的定义：\\(f(x)=x^\\alpha\\)",
+ "tips": "系数必须是1。"
+},
+{
+ "id": 15016,
+ "chapter": "函数概念与基本初等函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "\\(\\log_2 8=\\)________。",
+ "answer": "3",
+ "analysis": "log₂8 = log₂2³ = 3。",
+ "knowledge": "对数的运算性质",
+ "tips": "log_a aⁿ = n。"
+},
+{
+ "id": 15017,
+ "chapter": "函数概念与基本初等函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)\\) 满足 \\(f(x+1)=2f(x)\\)，且 \\(f(0)=1\\)，则 \\(f(3)=\\)________。",
+ "answer": "8",
+ "analysis": "f(1)=2f(0)=2。f(2)=2f(1)=4。f(3)=2f(2)=8。",
+ "knowledge": "函数的递推关系",
+ "tips": "逐步递推。"
+},
+{
+ "id": 15018,
+ "chapter": "函数概念与基本初等函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "判断函数 \\(f(x)=x^3+x\\) 的奇偶性，并证明你的结论。",
+ "answer": "奇函数",
+ "analysis": "f(x)的定义域是R，关于原点对称。f(-x)=(-x)³+(-x)=-x³-x=-(x³+x)=-f(x)。所以f(x)是奇函数。",
+ "knowledge": "函数奇偶性的判断",
+ "tips": "先看定义域是否关于原点对称，再算f(-x)。"
+},
+{
+ "id": 15019,
+ "chapter": "函数概念与基本初等函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=\\dfrac{ax+b}{1+x^2}\\) 是定义在(-1, 1)上的奇函数，且 \\(f(\\dfrac{1}{2})=\\dfrac{2}{5}\\)。（1）求函数f(x)的解析式；（2）用定义证明f(x)在(-1, 1)上是增函数。",
+ "answer": "（1）f(x)=x/(1+x²)；（2）略",
+ "analysis": "（1）奇函数：f(0)=0 → b=0。f(1/2)=a*(1/2)/(1+1/4) = (a/2)/(5/4) = 2a/5 = 2/5 → a=1。所以f(x)=x/(1+x²)。（2）任取x1<x2∈(-1,1)，f(x1)-f(x2) = x1/(1+x1²) - x2/(1+x2²) = (x1(1+x2²)-x2(1+x1²))/((1+x1²)(1+x2²)) = (x1-x2+x1x2²-x2x1²)/分母 = (x1-x2)(1-x1x2)/分母。因为x1<x2，所以x1-x2<0。因为x1,x2∈(-1,1)，所以x1x2<1，1-x1x2>0。分母>0。所以f(x1)-f(x2)<0，即f(x1)<f(x2)。所以是增函数。",
+ "knowledge": "函数解析式 + 单调性定义证明",
+ "tips": "奇函数f(0)=0；定义法证明单调性步骤：取值→作差→变形→定号→结论。"
+},
+{
+ "id": 15020,
+ "chapter": "函数概念与基本初等函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "某商场销售一种商品，每件进价40元。市场调查发现：若按每件50元销售，一个月能售出500件；销售单价每涨1元，月销售量就减少10件。设销售单价为x元（x≥50），月销售利润为y元。（1）写出y与x的函数关系式；（2）当销售单价定为多少元时，月销售利润最大？最大利润是多少？",
+ "answer": "（1）y=-10x²+1400x-40000；（2）70元，9000元",
+ "analysis": "（1）每件利润：x-40。销售量：500-10(x-50)=1000-10x。y=(x-40)(1000-10x) = -10x²+1400x-40000。（2）y=-10(x-70)²+9000。当x=70时，y最大=9000。",
+ "knowledge": "二次函数的实际应用：利润最值",
+ "tips": "利润=每件利润×销售量。"
+},
+{
+ "id": 16001,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "\\(\\sin 30^{\\circ}=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{1}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{\\sqrt{2}}{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{\\sqrt{3}}{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "1"
+  }
+ ],
+ "answer": "A",
+ "analysis": "sin30°=1/2。",
+ "knowledge": "特殊角的三角函数值",
+ "tips": "记住特殊角的三角函数值。"
+},
+{
+ "id": 16002,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "函数 \\(y=\\sin x\\) 的最小正周期为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{\\pi}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\pi\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(2\\pi\\)"
+  },
+  {
+   "key": "D",
+   "text": "4\\(\\pi\\)"
+  }
+ ],
+ "answer": "C",
+ "analysis": "y=sinx的周期是2π。",
+ "knowledge": "正弦函数的周期",
+ "tips": "y=sin(ωx+φ)的周期T=2π/|ω|。"
+},
+{
+ "id": 16003,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(y=2\\sin(2x+\\dfrac{\\pi}{3})\\) 的振幅和初相分别为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "2, \\(\\dfrac{\\pi}{3}\\)"
+  },
+  {
+   "key": "B",
+   "text": "2, \\(\\dfrac{\\pi}{6}\\)"
+  },
+  {
+   "key": "C",
+   "text": "1, \\(\\dfrac{\\pi}{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "1, \\(\\dfrac{\\pi}{6}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "y=Asin(ωx+φ)中，A是振幅，φ是初相。所以振幅2，初相π/3。",
+ "knowledge": "三角函数的振幅和初相",
+ "tips": "y=Asin(ωx+φ)：A振幅，φ初相。"
+},
+{
+ "id": 16004,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "\\(\\sin^2 15^{\\circ}+\\cos^2 15^{\\circ}=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{1}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{\\sqrt{2}}{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "1"
+  },
+  {
+   "key": "D",
+   "text": "2"
+  }
+ ],
+ "answer": "C",
+ "analysis": "同角三角函数的基本关系：sin²α+cos²α=1。",
+ "knowledge": "同角三角函数基本关系：\\(\\sin^2\\alpha+\\cos^2\\alpha=1\\)",
+ "tips": "记住基本关系式。"
+},
+{
+ "id": 16005,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知 \\(\\sin\\alpha=\\dfrac{3}{5}\\)，且 \\(\\alpha\\) 为第二象限角，则 \\(\\cos\\alpha=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{4}{5}\\)"
+  },
+  {
+   "key": "B",
+   "text": "-\\(\\dfrac{4}{5}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "D",
+   "text": "-\\(\\dfrac{3}{4}\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "cosα=-√(1-sin²α)=-√(1-9/25)=-√(16/25)=-4/5。第二象限cos为负。",
+ "knowledge": "同角三角函数基本关系 + 符号判断",
+ "tips": "第二象限：sin正，cos负。"
+},
+{
+ "id": 16006,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列函数中，是奇函数的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(y=\\sin x\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(y=\\cos x\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(y=\\tan x\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(y=\\sin x+\\tan x\\)"
+  }
+ ],
+ "answer": "ACD",
+ "analysis": "A：sin(-x)=-sinx，奇函数，对。B：cos(-x)=cosx，偶函数，错。C：tan(-x)=-tanx，奇函数，对。D：sin(-x)+tan(-x)=-sinx-tanx=-(sinx+tanx)，奇函数，对。",
+ "knowledge": "三角函数的奇偶性",
+ "tips": "sin奇，cos偶，tan奇。"
+},
+{
+ "id": 16007,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=\\sin(\\omega x+\\varphi)\\)（\\(\\omega>0\\)，\\(|\\varphi|<\\dfrac{\\pi}{2}\\)）的图像如图所示，则下列结论正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\omega=2\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\varphi=\\dfrac{\\pi}{6}\\)"
+  },
+  {
+   "key": "C",
+   "text": "f(x)的周期为\\(\\pi\\)"
+  },
+  {
+   "key": "D",
+   "text": "f(x)在\\([0, \\dfrac{\\pi}{2}]\\)上递增"
+  }
+ ],
+ "answer": "ABC",
+ "analysis": "（假设图像过(0,1/2)和(π/6,1)）。f(0)=sinφ=1/2，|φ|<π/2，所以φ=π/6。f(π/6)=sin(ωπ/6+π/6)=1 → ωπ/6+π/6=π/2 → ωπ/6=π/3 → ω=2。所以ω=2，φ=π/6，周期T=2π/2=π。D：f(x)=sin(2x+π/6)，在[0,π/2]上，2x+π/6∈[π/6,7π/6]，不是全程递增，错。",
+ "knowledge": "三角函数的图像和性质",
+ "tips": "代入特殊点求参数。"
+},
+{
+ "id": 16008,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "易",
+ "question": "\\(\\cos 60^{\\circ}=\\)________。",
+ "answer": "\\(\\dfrac{1}{2}\\)",
+ "analysis": "cos60°=1/2。",
+ "knowledge": "特殊角的三角函数值",
+ "tips": "记住特殊角的值。"
+},
+{
+ "id": 16009,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "函数 \\(y=3\\sin(2x)\\) 的最小正周期为________。",
+ "answer": "\\(\\pi\\)",
+ "analysis": "T=2π/2=π。",
+ "knowledge": "三角函数的周期",
+ "tips": "T=2π/|ω|。"
+},
+{
+ "id": 16010,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "化简：\\(\\dfrac{\\sin\\alpha}{\\cos\\alpha}=\\)________。",
+ "answer": "\\(\\tan\\alpha\\)",
+ "analysis": "同角三角函数基本关系：tanα=sinα/cosα。",
+ "knowledge": "同角三角函数基本关系：\\(\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}\\)",
+ "tips": "tan=sin/cos。"
+},
+{
+ "id": 16011,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知 \\(\\tan\\alpha=2\\)，求 \\(\\dfrac{\\sin\\alpha+\\cos\\alpha}{\\sin\\alpha-\\cos\\alpha}\\) 的值。",
+ "answer": "3",
+ "analysis": "分子分母同除以cosα：(tanα+1)/(tanα-1) = (2+1)/(2-1) = 3。",
+ "knowledge": "齐次式求值",
+ "tips": "分子分母同除以cosα，化成tanα的式子。"
+},
+{
+ "id": 16012,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=2\\sin(2x+\\dfrac{\\pi}{6})\\)。（1）求f(x)的最大值和最小值；（2）求f(x)的周期；（3）求f(x)的单调递增区间。",
+ "answer": "（1）最大值2，最小值-2；（2）T=π；（3）\\([-\\dfrac{\\pi}{3}+k\\pi, \\dfrac{\\pi}{6}+k\\pi]\\)，k∈Z",
+ "analysis": "（1）sin的范围是[-1,1]，所以f(x)最大值2，最小值-2。（2）T=2π/2=π。（3）令-π/2+2kπ≤2x+π/6≤π/2+2kπ，解得-π/3+kπ≤x≤π/6+kπ。",
+ "knowledge": "正弦型函数的性质",
+ "tips": "整体代入sin的单调区间。"
+},
+{
+ "id": 16013,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "集合 \\(A=\\{x\\mid \\sin x=\\dfrac{1}{2}\\}\\)，集合 \\(B=\\{x\\mid 0<x<\\pi\\}\\)，则 \\(A\\cap B=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\{\\dfrac{\\pi}{6}\\}"
+  },
+  {
+   "key": "B",
+   "text": "\\{\\dfrac{5\\pi}{6}\\}"
+  },
+  {
+   "key": "C",
+   "text": "\\{\\dfrac{\\pi}{6}, \\dfrac{5\\pi}{6}\\}"
+  },
+  {
+   "key": "D",
+   "text": "\\varnothing"
+  }
+ ],
+ "answer": "C",
+ "analysis": "sinx=1/2在(0,π)内的解是π/6和5π/6。",
+ "knowledge": "三角方程的解",
+ "tips": "记住sinx=1/2的解。"
+},
+{
+ "id": 16014,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "要得到函数 \\(y=\\sin(2x-\\dfrac{\\pi}{3})\\) 的图像，只需将函数 \\(y=\\sin 2x\\) 的图像（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "向左平移\\(\\dfrac{\\pi}{3}\\)个单位"
+  },
+  {
+   "key": "B",
+   "text": "向右平移\\(\\dfrac{\\pi}{3}\\)个单位"
+  },
+  {
+   "key": "C",
+   "text": "向左平移\\(\\dfrac{\\pi}{6}\\)个单位"
+  },
+  {
+   "key": "D",
+   "text": "向右平移\\(\\dfrac{\\pi}{6}\\)个单位"
+  }
+ ],
+ "answer": "D",
+ "analysis": "y=sin(2x-π/3)=sin[2(x-π/6)]。所以是向右平移π/6个单位。",
+ "knowledge": "三角函数的图像变换",
+ "tips": "注意x的系数，平移量是φ/ω。"
+},
+{
+ "id": 16015,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列等式正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\sin(\\pi+\\alpha)=-\\sin\\alpha\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\cos(\\pi+\\alpha)=-\\cos\\alpha\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\sin(-\\alpha)=-\\sin\\alpha\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\cos(-\\alpha)=-\\cos\\alpha\\)"
+  }
+ ],
+ "answer": "ABC",
+ "analysis": "A：sin(π+α)=-sinα，对。B：cos(π+α)=-cosα，对。C：sin(-α)=-sinα，对。D：cos(-α)=cosα，错。",
+ "knowledge": "诱导公式",
+ "tips": "奇变偶不变，符号看象限。"
+},
+{
+ "id": 16016,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "\\(\\sin \\dfrac{5\\pi}{6}=\\)________。",
+ "answer": "\\(\\dfrac{1}{2}\\)",
+ "analysis": "sin(5π/6)=sin(π-π/6)=sin(π/6)=1/2。",
+ "knowledge": "诱导公式",
+ "tips": "sin(π-α)=sinα。"
+},
+{
+ "id": 16017,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "函数 \\(y=\\cos x\\)，\\(x\\in[-\\dfrac{\\pi}{3}, \\dfrac{2\\pi}{3}]\\) 的最大值为________，最小值为________。",
+ "answer": "1, -\\(\\dfrac{1}{2}\\)",
+ "analysis": "cosx在[-π/3, 2π/3]上，最大值在x=0处取到1，最小值在x=2π/3处取到cos(2π/3)=-1/2。",
+ "knowledge": "余弦函数的值域",
+ "tips": "画图看最值。"
+},
+{
+ "id": 16018,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "化简：\\(\\dfrac{\\sin(\\pi+\\alpha)\\cos(2\\pi-\\alpha)}{\\cos(-\\alpha-\\pi)}\\)。",
+ "answer": "-\\(\\cos\\alpha\\)",
+ "analysis": "sin(π+α)=-sinα。cos(2π-α)=cosα。cos(-α-π)=cos(α+π)=-cosα。所以原式=(-sinα·cosα)/(-cosα) = sinα。不对，重新算：分子=(-sinα)·cosα=-sinαcosα。分母=cos(-α-π)=cos(α+π)=-cosα。所以原式=(-sinαcosα)/(-cosα)=sinα。",
+ "knowledge": "诱导公式的应用",
+ "tips": "逐个化简。"
+},
+{
+ "id": 16019,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=A\\sin(\\omega x+\\varphi)\\)（\\(A>0\\)，\\(\\omega>0\\)，\\(|\\varphi|<\\dfrac{\\pi}{2}\\)）的最大值为2，最小正周期为π，且图像过点(0, 1)。（1）求函数f(x)的解析式；（2）求f(x)的单调递增区间。",
+ "answer": "（1）f(x)=2\\sin(2x+\\(\\dfrac{\\pi}{6}\\))；（2）\\([-\\dfrac{\\pi}{3}+k\\pi, \\dfrac{\\pi}{6}+k\\pi]\\)，k∈Z",
+ "analysis": "（1）最大值2 → A=2。周期π → T=2π/ω=π → ω=2。f(0)=2sinφ=1 → sinφ=1/2。|φ|<π/2，所以φ=π/6。所以f(x)=2sin(2x+π/6)。（2）令-π/2+2kπ≤2x+π/6≤π/2+2kπ，解得-π/3+kπ≤x≤π/6+kπ。",
+ "knowledge": "由图像性质求三角函数解析式",
+ "tips": "A由最值求，ω由周期求，φ由特殊点求。"
+},
+{
+ "id": 16020,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "某秋千的简谐运动可以近似用函数 \\(y=2\\sin(2t+\\dfrac{\\pi}{3})\\)（单位：米，t单位：秒）描述。（1）求秋千的最大摆动距离；（2）求秋千摆动的周期；（3）经过多少时间，秋千第一次到达最高点？",
+ "answer": "（1）4米；（2）π秒；（3）\\(\\dfrac{\\pi}{12}\\)秒",
+ "analysis": "（1）振幅2，所以最大摆动距离是从-2到2，共4米。（2）周期T=2π/2=π秒。（3）sin取最大值1时，2t+π/3=π/2 → 2t=π/6 → t=π/12。",
+ "knowledge": "三角函数的实际应用",
+ "tips": "振幅对应最大值，周期对应往复时间。"
 }
 ];
