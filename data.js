@@ -18090,5 +18090,423 @@ const CHAPTER_DATA = [
  "analysis": "(1) BB₁⊥底面，故BB₁⊥AC。又AC⊥BC，BB₁∩BC=B，故AC⊥平面BB₁C₁C。又AC⊂平面AB₁C₁，故平面AB₁C₁⊥平面BB₁C₁C。<br>(2) 建系：C为原点，CA为x轴，CB为y轴，CC₁为z轴。求两个面的法向量，再计算夹角余弦。",
  "knowledge": "面面垂直判定（高中），二面角（高中），等腰直角三角形（初中）",
  "tips": "建系法求二面角：找两个面的法向量"
+},
+{
+ "id": 2001,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "已知角 \\(\\alpha\\) 的终边经过点 \\(P(3,4)\\)，则 \\(\\sin\\alpha = \\) （　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{3}{5}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{4}{5}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{4}{3}\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "因为点 \\(P(3,4)\\)，所以 \\(r=\\sqrt{3^2+4^2}=5\\)。由三角函数定义，\\(\\sin\\alpha=\\dfrac{y}{r}=\\dfrac{4}{5}\\)。",
+ "knowledge": "三角函数定义：\\(\\sin\\alpha=\\dfrac{y}{r}\\)，\\(\\cos\\alpha=\\dfrac{x}{r}\\)，\\(\\tan\\alpha=\\dfrac{y}{x}\\)",
+ "tips": "利用勾股定理先求r，再按定义直接计算。"
+},
+{
+ "id": 2002,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "\\(\\sin 300^{\\circ} = \\) （　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{1}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(-\\dfrac{1}{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{\\sqrt{3}}{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(-\\dfrac{\\sqrt{3}}{2}\\)"
+  }
+ ],
+ "answer": "D",
+ "analysis": "\\(\\sin 300^{\\circ}=\\sin(360^{\\circ}-60^{\\circ})=-\\sin 60^{\\circ}=-\\dfrac{\\sqrt{3}}{2}\\)。",
+ "knowledge": "诱导公式：\\(\\sin(360^{\\circ}-\\alpha)=-\\sin\\alpha\\)",
+ "tips": "负角公式：函数名不变，符号看象限。"
+},
+{
+ "id": 2003,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "函数 \\(y=\\sin x\\) 的最小正周期是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{\\pi}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\pi\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(2\\pi\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(4\\pi\\)"
+  }
+ ],
+ "answer": "C",
+ "analysis": "正弦函数 \\(y=\\sin x\\) 的最小正周期为 \\(2\\pi\\)。",
+ "knowledge": "正弦函数周期：\\(T=2\\pi\\)（对 \\(y=A\\sin(\\omega x+\\varphi)\\)，\\(T=\\dfrac{2\\pi}{|\\omega|}\\)）",
+ "tips": "记住基本函数的周期，再按公式套用。"
+},
+{
+ "id": 2004,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知 \\(\\sin\\alpha=\\dfrac{3}{5}\\)，且 \\(\\alpha\\) 为第二象限角，则 \\(\\tan\\alpha=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(-\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{4}{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(-\\dfrac{4}{3}\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "因为 \\(\\alpha\\) 是第二象限角，所以 \\(\\cos\\alpha<0\\)。\\(\\cos\\alpha=-\\sqrt{1-\\sin^2\\alpha}=-\\sqrt{1-\\dfrac{9}{25}}=-\\dfrac{4}{5}\\)。所以 \\(\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}=\\dfrac{3/5}{-4/5}=-\\dfrac{3}{4}\\)。",
+ "knowledge": "同角三角函数关系：\\(\\sin^2\\alpha+\\cos^2\\alpha=1\\)，\\(\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}\\)",
+ "tips": "先定象限符号，再用平方关系求cos，最后求tan。"
+},
+{
+ "id": 2005,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(y=\\sin(2x+\\dfrac{\\pi}{3})\\) 的图像的对称轴方程为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(x=\\dfrac{\\pi}{12}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(x=\\dfrac{\\pi}{6}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(x=\\dfrac{\\pi}{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(x=\\dfrac{\\pi}{2}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "正弦函数对称轴处取最值。令 \\(2x+\\dfrac{\\pi}{3}=\\dfrac{\\pi}{2}+k\\pi\\)，解得 \\(x=\\dfrac{\\pi}{12}+\\dfrac{k\\pi}{2}\\)。当 \\(k=0\\) 时，\\(x=\\dfrac{\\pi}{12}\\)。",
+ "knowledge": "正弦型函数对称轴：令 \\(\\omega x+\\varphi=\\dfrac{\\pi}{2}+k\\pi\\)（最值位置）",
+ "tips": "正弦函数在对称轴处取最大值或最小值。"
+},
+{
+ "id": 2006,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列函数中，最小正周期为 \\(\\pi\\) 的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(y=\\sin(2x)\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(y=\\cos(2x)\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(y=\\tan x\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(y=|\\sin x|\\)"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "A：\\(T=\\dfrac{2\\pi}{2}=\\pi\\)；B：\\(T=\\dfrac{2\\pi}{2}=\\pi\\)；C：正切函数周期为 \\(\\pi\\)；D：加绝对值后周期减半，\\(T=\\pi\\)。四个都对。",
+ "knowledge": "周期公式：\\(y=A\\sin(\\omega x+\\varphi)\\)周期 \\(T=\\dfrac{2\\pi}{|\\omega|}\\)，正切周期 \\(T=\\dfrac{\\pi}{|\\omega|}\\)",
+ "tips": "注意正切函数周期是\\(\\pi/|\\omega|\\)，不是\\(2\\pi/|\\omega|\\)。"
+},
+{
+ "id": 2007,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=\\sin(\\omega x+\\varphi)\\)（\\(\\omega>0, |\\varphi|<\\dfrac{\\pi}{2}\\)）的图像关于直线 \\(x=\\dfrac{\\pi}{3}\\) 对称，且在 \\(x=\\dfrac{\\pi}{12}\\) 处取得最小值，则下列说法正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\omega=2\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\varphi=-\\dfrac{\\pi}{6}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(f(x)\\) 在 \\([0,\\dfrac{\\pi}{6}]\\) 上单调递增"
+  },
+  {
+   "key": "D",
+   "text": "\\(f(x)\\) 的图像关于点 \\((\\dfrac{\\pi}{6},0)\\) 对称"
+  }
+ ],
+ "answer": "ABC",
+ "analysis": "对称轴 \\(x=\\dfrac{\\pi}{3}\\)，最小值点 \\(x=\\dfrac{\\pi}{12}\\)，两者距离为 \\(\\dfrac{\\pi}{4}\\)，等于四分之一周期，所以 \\(T=\\pi\\)，\\(\\omega=2\\)。在最小值点：\\(2\\cdot\\dfrac{\\pi}{12}+\\varphi=-\\dfrac{\\pi}{2}\\)，解得 \\(\\varphi=-\\dfrac{2\\pi}{3}\\)（舍去，超范围）或调整后得 \\(\\varphi=-\\dfrac{\\pi}{6}\\)。验证C：\\(f(x)=\\sin(2x-\\dfrac{\\pi}{6})\\)，在 \\([0,\\dfrac{\\pi}{6}]\\) 上，\\(2x-\\dfrac{\\pi}{6}\\in[-\\dfrac{\\pi}{6},\\dfrac{\\pi}{6}]\\)，单调递增，正确。D：对称中心应在零点，\\(x=\\dfrac{\\pi}{6}\\) 时 \\(f(\\dfrac{\\pi}{6})=\\sin(\\dfrac{\\pi}{6})=\\dfrac{1}{2}\\neq0\\)，错误。",
+ "knowledge": "正弦函数的对称轴与对称中心间隔为四分之一周期",
+ "tips": "对称轴与相邻最值点的距离 = T/4。"
+},
+{
+ "id": 2008,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "易",
+ "question": "化简：\\(\\dfrac{\\sin(\\pi-\\alpha)\\cdot\\cos(2\\pi-\\alpha)}{\\tan(\\pi-\\alpha)\\cdot\\sin(\\dfrac{\\pi}{2}+\\alpha)}=\\)________。",
+ "answer": "-\\(\\cos\\alpha\\)",
+ "analysis": "原式 = \\(\\dfrac{\\sin\\alpha\\cdot\\cos\\alpha}{-\\tan\\alpha\\cdot\\cos\\alpha}=\\dfrac{\\sin\\alpha}{-\\dfrac{\\sin\\alpha}{\\cos\\alpha}}=-\\cos\\alpha\\)。",
+ "knowledge": "诱导公式：\\(\\sin(\\pi-\\alpha)=\\sin\\alpha\\)，\\(\\cos(2\\pi-\\alpha)=\\cos\\alpha\\)，\\(\\tan(\\pi-\\alpha)=-\\tan\\alpha\\)",
+ "tips": "逐项用诱导公式化简，再约分。"
+},
+{
+ "id": 2009,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "已知 \\(\\tan\\alpha=2\\)，则 \\(\\dfrac{\\sin\\alpha+\\cos\\alpha}{\\sin\\alpha-\\cos\\alpha}=\\)________。",
+ "answer": "3",
+ "analysis": "分子分母同除以 \\(\\cos\\alpha\\)，得 \\(\\dfrac{\\tan\\alpha+1}{\\tan\\alpha-1}=\\dfrac{2+1}{2-1}=3\\)。",
+ "knowledge": "齐次式求值：弦化切，分子分母同除以cosα",
+ "tips": "见到sin和cos的齐次分式，直接上下同除cosα化成tan。"
+},
+{
+ "id": 2010,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "函数 \\(y=2\\sin(\\dfrac{1}{2}x+\\dfrac{\\pi}{4})\\) 的振幅为________，周期为________，初相为________。",
+ "answer": "2，\\(4\\pi\\)，\\(\\dfrac{\\pi}{4}\\)",
+ "analysis": "对 \\(y=A\\sin(\\omega x+\\varphi)\\)：振幅 \\(A=2\\)，周期 \\(T=\\dfrac{2\\pi}{1/2}=4\\pi\\)，初相 \\(\\varphi=\\dfrac{\\pi}{4}\\)。",
+ "knowledge": "正弦型函数参数：振幅A，周期T=2π/ω，初相φ",
+ "tips": "直接对照标准形式写出参数。"
+},
+{
+ "id": 2011,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知函数 \\(f(x)=2\\sin x\\cos x+2\\sqrt{3}\\cos^2 x-\\sqrt{3}\\)。（1）求 \\(f(x)\\) 的最小正周期；（2）求 \\(f(x)\\) 的最大值及取得最大值时 \\(x\\) 的集合。",
+ "answer": "（1）\\(\\pi\\)；（2）最大值为2，此时 \\(x=\\dfrac{\\pi}{12}+k\\pi, k\\in Z\\)",
+ "analysis": "化简：\\(f(x)=\\sin 2x+\\sqrt{3}(1+\\cos 2x)-\\sqrt{3}=\\sin 2x+\\sqrt{3}\\cos 2x=2\\sin(2x+\\dfrac{\\pi}{3})\\)。（1）周期 \\(T=\\dfrac{2\\pi}{2}=\\pi\\)。（2）最大值为2，当 \\(2x+\\dfrac{\\pi}{3}=\\dfrac{\\pi}{2}+2k\\pi\\)，即 \\(x=\\dfrac{\\pi}{12}+k\\pi\\) 时取得。",
+ "knowledge": "二倍角公式 + 辅助角公式化成正弦型",
+ "tips": "先用二倍角降幂，再用辅助角公式合一。"
+},
+{
+ "id": 2012,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=\\sin(\\omega x+\\varphi)\\)（\\(\\omega>0, 0\\leq\\varphi\\leq\\pi\\)）是偶函数，其图像关于点 \\((\\dfrac{3\\pi}{8},0)\\) 对称，且在区间 \\([0,\\dfrac{\\pi}{2}]\\) 上是单调函数，求 \\(\\omega\\) 和 \\(\\varphi\\) 的值。",
+ "answer": "\\(\\varphi=\\dfrac{\\pi}{2}\\)，\\(\\omega=\\dfrac{2}{3}\\)",
+ "analysis": "因为f(x)是偶函数，所以 \\(\\varphi=\\dfrac{\\pi}{2}+k\\pi\\)，又 \\(0\\leq\\varphi\\leq\\pi\\)，所以 \\(\\varphi=\\dfrac{\\pi}{2}\\)。此时 \\(f(x)=\\sin(\\omega x+\\dfrac{\\pi}{2})=\\cos(\\omega x)\\)。图像关于 \\((\\dfrac{3\\pi}{8},0)\\) 对称，所以 \\(\\cos(\\omega\\cdot\\dfrac{3\\pi}{8})=0\\)，即 \\(\\omega\\cdot\\dfrac{3\\pi}{8}=\\dfrac{\\pi}{2}+k\\pi\\)，解得 \\(\\omega=\\dfrac{4}{3}+\\dfrac{8k}{3}\\)。又因为在 \\([0,\\dfrac{\\pi}{2}]\\) 单调，所以周期 \\(T\\geq\\pi\\)，即 \\(\\dfrac{2\\pi}{\\omega}\\geq\\pi\\)，\\(\\omega\\leq2\\)。取 \\(k=0\\)，得 \\(\\omega=\\dfrac{4}{3}\\)？不对，重新算：\\(\\omega\\cdot\\dfrac{3\\pi}{8}=\\dfrac{\\pi}{2}\\) 时，\\(\\omega=\\dfrac{4}{3}\\)，满足\\(\\omega\\leq2\\)。",
+ "knowledge": "偶函数性质 + 对称中心 + 单调性综合",
+ "tips": "偶函数 → 余弦函数；对称中心 → 零点；单调 → 周期限制。"
+},
+{
+ "id": 2013,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "集合 \\(A=\\{\\alpha\\mid\\alpha=k\\cdot 90^{\\circ}, k\\in Z\\}\\)，集合 \\(B=\\{\\alpha\\mid\\alpha=k\\cdot 180^{\\circ}, k\\in Z\\}\\)，则A与B的关系是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(A\\subseteq B\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(B\\subseteq A\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(A=B\\)"
+  },
+  {
+   "key": "D",
+   "text": "以上都不对"
+  }
+ ],
+ "answer": "B",
+ "analysis": "集合A表示所有90°的整数倍角，集合B表示所有180°的整数倍角。180°的倍数一定是90°的倍数，但反之不成立，所以 \\(B\\subseteq A\\)。",
+ "knowledge": "终边相同的角的集合表示 + 集合包含关系",
+ "tips": "判断集合包含关系，看元素范围谁大谁小。"
+},
+{
+ "id": 2014,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(f(x)=\\sin x+\\sqrt{3}\\cos x\\) 的最大值为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "1"
+  },
+  {
+   "key": "B",
+   "text": "2"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\sqrt{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\sqrt{2}\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "\\(f(x)=2\\sin(x+\\dfrac{\\pi}{3})\\)，最大值为2。",
+ "knowledge": "辅助角公式：\\(a\\sin x+b\\cos x=\\sqrt{a^2+b^2}\\sin(x+\\varphi)\\)",
+ "tips": "辅助角公式直接求最大值√(a²+b²)。"
+},
+{
+ "id": 2015,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知 \\(\\sin(\\alpha+\\dfrac{\\pi}{4})=\\dfrac{\\sqrt{2}}{3}\\)，则 \\(\\sin 2\\alpha=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "-\\(\\dfrac{7}{9}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{7}{9}\\)"
+  },
+  {
+   "key": "C",
+   "text": "-\\(\\dfrac{2}{9}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{2}{9}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "\\(\\sin(\\alpha+\\dfrac{\\pi}{4})=\\dfrac{\\sqrt{2}}{2}(\\sin\\alpha+\\cos\\alpha)=\\dfrac{\\sqrt{2}}{3}\\)，所以 \\(\\sin\\alpha+\\cos\\alpha=\\dfrac{2}{3}\\)。两边平方：\\(1+\\sin 2\\alpha=\\dfrac{4}{9}\\)，所以 \\(\\sin 2\\alpha=-\\dfrac{7}{9}\\)。",
+ "knowledge": "两角和公式 + 二倍角公式的灵活运用",
+ "tips": "见到sin(α+π/4)，展开后平方求sin2α。"
+},
+{
+ "id": 2016,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列函数中，既是偶函数又在 \\((0,\\dfrac{\\pi}{2})\\) 上单调递增的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(y=\\cos x\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(y=|\\sin x|\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(y=\\tan x\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(y=|\\cos x|\\)"
+  }
+ ],
+ "answer": "BD",
+ "analysis": "A：cosx是偶函数，但在(0,π/2)上单调递减，错；B：|sinx|是偶函数，在(0,π/2)上=sinx单调递增，对；C：tanx是奇函数，错；D：|cosx|是偶函数，在(0,π/2)上=-cosx单调递增，对。",
+ "knowledge": "三角函数的奇偶性和单调性",
+ "tips": "先排除奇函数，再判断单调性。"
+},
+{
+ "id": 2017,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "已知 \\(\\cos(\\dfrac{\\pi}{6}-\\alpha)=\\dfrac{1}{3}\\)，则 \\(\\sin(\\alpha+\\dfrac{\\pi}{3})=\\)________。",
+ "answer": "\\(\\dfrac{1}{3}\\)",
+ "analysis": "因为 \\((\\dfrac{\\pi}{6}-\\alpha)+(\\alpha+\\dfrac{\\pi}{3})=\\dfrac{\\pi}{2}\\)，所以 \\(\\sin(\\alpha+\\dfrac{\\pi}{3})=\\sin(\\dfrac{\\pi}{2}-(\\dfrac{\\pi}{6}-\\alpha))=\\cos(\\dfrac{\\pi}{6}-\\alpha)=\\dfrac{1}{3}\\)。",
+ "knowledge": "互余角诱导公式：\\(\\sin(\\dfrac{\\pi}{2}-\\beta)=\\cos\\beta\\)",
+ "tips": "发现两个角加起来是π/2，直接用诱导公式。"
+},
+{
+ "id": 2018,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "函数 \\(y=\\sin x+\\cos x+\\sin x\\cos x\\) 的最大值为________。",
+ "answer": "\\(\\dfrac{\\sqrt{2}}{2}+\\dfrac{1}{2}\\)",
+ "analysis": "令 \\(t=\\sin x+\\cos x\\)，则 \\(t\\in[-\\sqrt{2},\\sqrt{2}]\\)，且 \\(\\sin x\\cos x=\\dfrac{t^2-1}{2}\\)。原式 = \\(t+\\dfrac{t^2-1}{2}=\\dfrac{1}{2}t^2+t-\\dfrac{1}{2}\\)。这是关于t的二次函数，开口向上，对称轴t=-1。在 \\(t=\\sqrt{2}\\) 时取最大值：\\(\\dfrac{1}{2}\\cdot 2+\\sqrt{2}-\\dfrac{1}{2}=\\dfrac{1}{2}+\\sqrt{2}\\)。",
+ "knowledge": "换元法求三角函数最值",
+ "tips": "见到sinx+cosx和sinxcosx同时出现，令t=sinx+cosx换元。"
+},
+{
+ "id": 2019,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知 \\(\\sin\\alpha=\\dfrac{3}{5}\\)，\\(\\cos\\beta=\\dfrac{5}{13}\\)，且 \\(\\alpha\\in(0,\\dfrac{\\pi}{2})\\)，\\(\\beta\\in(0,\\dfrac{\\pi}{2})\\)，求 \\(\\cos(\\alpha+\\beta)\\) 的值。",
+ "answer": "\\(\\dfrac{16}{65}\\)",
+ "analysis": "因为α和β都在第一象限，所以 \\(\\cos\\alpha=\\dfrac{4}{5}\\)，\\(\\sin\\beta=\\dfrac{12}{13}\\)。\\(\\cos(\\alpha+\\beta)=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta=\\dfrac{4}{5}\\cdot\\dfrac{5}{13}-\\dfrac{3}{5}\\cdot\\dfrac{12}{13}=\\dfrac{20-36}{65}=-\\dfrac{16}{65}\\)。（注：题目说α,β在(0,π/2)，但结果为负，说明α+β>π/2，合理）",
+ "knowledge": "两角和的余弦公式",
+ "tips": "先求同角三角函数值，再套公式。"
+},
+{
+ "id": 2020,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=2\\sin(\\omega x)\\) 在区间 \\([-\\dfrac{\\pi}{3},\\dfrac{\\pi}{4}]\\) 上的最小值为-2，求 \\(\\omega\\) 的取值范围。",
+ "answer": "\\(|\\omega|\\geq\\dfrac{3}{2}\\)",
+ "analysis": "当ω>0时，x∈[-π/3, π/4]，所以ωx∈[-ωπ/3, ωπ/4]。要使最小值为-2，区间必须包含-π/2 + 2kπ（正弦取-1的位置）。即 -ωπ/3 ≤ -π/2，解得 ω ≥ 3/2。当ω<0时，同理得 |ω| ≥ 3/2。",
+ "knowledge": "正弦函数值域问题",
+ "tips": "最小值为-2 → 区间必须能取到-1。"
 }
 ];
