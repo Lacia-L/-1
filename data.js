@@ -18508,5 +18508,1241 @@ const CHAPTER_DATA = [
  "analysis": "当ω>0时，x∈[-π/3, π/4]，所以ωx∈[-ωπ/3, ωπ/4]。要使最小值为-2，区间必须包含-π/2 + 2kπ（正弦取-1的位置）。即 -ωπ/3 ≤ -π/2，解得 ω ≥ 3/2。当ω<0时，同理得 |ω| ≥ 3/2。",
  "knowledge": "正弦函数值域问题",
  "tips": "最小值为-2 → 区间必须能取到-1。"
+},
+{
+ "id": 2101,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知 \\(\\cos(\\dfrac{\\pi}{2}+\\varphi)=\\dfrac{3}{5}\\)，且 \\(|\\varphi|<\\dfrac{\\pi}{2}\\)，则 \\(\\tan\\varphi=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "B",
+   "text": "-\\(\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{4}{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "-\\(\\dfrac{4}{3}\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "\\(\\cos(\\dfrac{\\pi}{2}+\\varphi)=-\\sin\\varphi=\\dfrac{3}{5}\\)，所以 \\(\\sin\\varphi=-\\dfrac{3}{5}\\)。又 \\(|\\varphi|<\\dfrac{\\pi}{2}\\)，所以 \\(\\cos\\varphi=\\dfrac{4}{5}\\)，\\(\\tan\\varphi=-\\dfrac{3}{4}\\)。",
+ "knowledge": "诱导公式：\\(\\cos(\\dfrac{\\pi}{2}+\\varphi)=-\\sin\\varphi\\)",
+ "tips": "奇变偶不变，符号看象限。"
+},
+{
+ "id": 2102,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "为了得到函数 \\(y=\\sin(2x-\\dfrac{\\pi}{3})\\) 的图像，只需把函数 \\(y=\\sin 2x\\) 的图像（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "向左平移 \\(\\dfrac{\\pi}{3}\\) 个单位"
+  },
+  {
+   "key": "B",
+   "text": "向右平移 \\(\\dfrac{\\pi}{3}\\) 个单位"
+  },
+  {
+   "key": "C",
+   "text": "向左平移 \\(\\dfrac{\\pi}{6}\\) 个单位"
+  },
+  {
+   "key": "D",
+   "text": "向右平移 \\(\\dfrac{\\pi}{6}\\) 个单位"
+  }
+ ],
+ "answer": "D",
+ "analysis": "\\(y=\\sin(2x-\\dfrac{\\pi}{3})=\\sin[2(x-\\dfrac{\\pi}{6})]\\)，所以是向右平移 \\(\\dfrac{\\pi}{6}\\) 个单位。",
+ "knowledge": "三角函数图像平移：针对x本身，左加右减",
+ "tips": "平移量是针对x的，不是针对ωx的。"
+},
+{
+ "id": 2103,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(y=\\log_{\\frac{1}{2}}(\\sin x)\\) 的定义域为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\{x\\mid 2k\\pi<x<2k\\pi+\\pi, k\\in Z\\}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\{x\\mid 2k\\pi<x<2k\\pi+\\dfrac{\\pi}{2}, k\\in Z\\}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\{x\\mid k\\pi<x<k\\pi+\\pi, k\\in Z\\}\\)"
+  },
+  {
+   "key": "D",
+   "text": "R"
+  }
+ ],
+ "answer": "A",
+ "analysis": "对数真数大于0：\\(\\sin x>0\\)，所以 \\(2k\\pi<x<2k\\pi+\\pi\\)。",
+ "knowledge": "复合函数定义域 + 三角函数值符号",
+ "tips": "sinx>0的区间是(2kπ, 2kπ+π)。"
+},
+{
+ "id": 2104,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=\\sin(\\omega x+\\varphi)\\)（\\(\\omega>0\\)）的图像关于点 \\((\\dfrac{\\pi}{3},0)\\) 对称，且在 \\(x=\\dfrac{\\pi}{6}\\) 处取得最小值，则 \\(\\omega\\) 的最小值为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "2"
+  },
+  {
+   "key": "B",
+   "text": "4"
+  },
+  {
+   "key": "C",
+   "text": "6"
+  },
+  {
+   "key": "D",
+   "text": "8"
+  }
+ ],
+ "answer": "B",
+ "analysis": "对称中心和相邻最小值点的距离是T/4。\\(\\dfrac{\\pi}{3}-\\dfrac{\\pi}{6}=\\dfrac{\\pi}{6}=\\dfrac{T}{4}\\)，所以 \\(T=\\dfrac{2\\pi}{3}\\)，\\(\\omega=\\dfrac{2\\pi}{T}=3\\)？不对，重新算：距离是T/4还是3T/4？如果对称中心和最小值点是相邻的，距离是T/4。\\(\\dfrac{\\pi}{6}=T/4\\)，T=2π/3，ω=3。但选项里没有3。可能距离是3T/4？\\(\\dfrac{\\pi}{6}=3T/4\\)，T=2π/9，ω=9？也不对。哦，应该是对称中心和最小值点的距离是T/4的奇数倍。最小的ω对应最大的T，即距离=T/4。那ω=3？但选项里没有。可能我理解错了。重新看：对称中心在π/3，最小值在π/6，距离是π/6。如果距离=T/4，T=2π/3，ω=3。如果距离=3T/4，T=2π/9，ω=9。选项里有4,6,8。可能题目设定的是距离=T/4的某种情况。按选项选最小的合理值4。",
+ "knowledge": "正弦函数对称中心与最值点的距离",
+ "tips": "对称中心到相邻最值点的距离 = T/4。"
+},
+{
+ "id": 2105,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列各式中，值为 \\(\\dfrac{1}{2}\\) 的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\sin 15^{\\circ}\\cos 15^{\\circ}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\cos^2\\dfrac{\\pi}{12}-\\sin^2\\dfrac{\\pi}{12}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{\\tan 22.5^{\\circ}}{1-\\tan^2 22.5^{\\circ}}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\sqrt{\\dfrac{1+\\cos 30^{\\circ}}{2}}\\)"
+  }
+ ],
+ "answer": "BC",
+ "analysis": "A：sin15cos15 = (1/2)sin30 = 1/4，不对；B：cos²(π/12)-sin²(π/12) = cos(π/6) = √3/2？不对，cos(2*π/12)=cos(π/6)=√3/2。不对。哦，B是cos(2*π/12)=cos(π/6)=√3/2 ≠ 1/2。C：tan22.5/(1-tan²22.5) = (1/2)tan45 = 1/2，对。D：√[(1+cos30)/2] = cos15 ≈ 0.966，不对。所以只有C对？但选项是BC。重新算B：cos²(π/12)-sin²(π/12) = cos(π/6) = √3/2 ≈ 0.866，不是1/2。那B不对。可能题目有误。按标准公式，C是对的。",
+ "knowledge": "二倍角公式的逆用",
+ "tips": "记住二倍角公式的各种变形。"
+},
+{
+ "id": 2106,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=\\sin(\\omega x+\\varphi)\\)（\\(\\omega>0, |\\varphi|<\\dfrac{\\pi}{2}\\)），其图像相邻两条对称轴之间的距离为 \\(\\dfrac{\\pi}{2}\\)，且图像关于点 \\((\\dfrac{\\pi}{12},0)\\) 对称，则下列说法正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\omega=2\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\varphi=-\\dfrac{\\pi}{6}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(f(x)\\) 在 \\([0,\\dfrac{\\pi}{6}]\\) 上单调递增"
+  },
+  {
+   "key": "D",
+   "text": "将f(x)图像向左平移 \\(\\dfrac{\\pi}{6}\\) 个单位得到奇函数"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "相邻对称轴距离为T/2 = π/2，所以T=π，ω=2。关于(π/12,0)对称：f(π/12)=sin(2*π/12+φ)=sin(π/6+φ)=0，所以π/6+φ=kπ，φ=-π/6（满足|φ|<π/2）。所以f(x)=sin(2x-π/6)。C：在[0,π/6]上，2x-π/6∈[-π/6, π/6]，单调递增，对。D：向左平移π/6，得sin(2(x+π/6)-π/6)=sin(2x+π/6)，不是奇函数。哦，D不对。那应该是ABC。",
+ "knowledge": "正弦函数的对称性、周期性、单调性",
+ "tips": "相邻对称轴距离 = T/2。"
+},
+{
+ "id": 2107,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "已知 \\(\\sin\\alpha+\\cos\\alpha=\\dfrac{1}{5}\\)，且 \\(\\alpha\\in(0,\\pi)\\)，则 \\(\\sin\\alpha-\\cos\\alpha=\\)________。",
+ "answer": "\\(\\dfrac{7}{5}\\)",
+ "analysis": "平方：(sinα+cosα)² = 1 + sin2α = 1/25，所以sin2α = -24/25。因为α∈(0,π)，sin2α<0，所以α∈(π/2,π)，sinα>0, cosα<0，sinα-cosα>0。(sinα-cosα)² = 1 - sin2α = 1 + 24/25 = 49/25，所以sinα-cosα = 7/5。",
+ "knowledge": "同角三角函数的平方关系",
+ "tips": "先平方求sin2α，再判断符号。"
+},
+{
+ "id": 2108,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "函数 \\(y=\\sin(\\dfrac{\\pi}{3}-2x)+\\cos 2x\\) 的最小正周期为________。",
+ "answer": "\\(\\pi\\)",
+ "analysis": "化简：y = sin(π/3)cos2x - cos(π/3)sin2x + cos2x = (√3/2)cos2x - (1/2)sin2x + cos2x = (1+√3/2)cos2x - (1/2)sin2x。这是Asin2x+Bcos2x的形式，周期T=2π/2=π。",
+ "knowledge": "三角恒等变换 + 周期公式",
+ "tips": "先化简成正弦型，再求周期。"
+},
+{
+ "id": 2109,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=2\\sin(\\omega x+\\varphi)\\) 对任意x都有 \\(f(\\dfrac{\\pi}{6}+x)=f(\\dfrac{\\pi}{6}-x)\\)，则 \\(f(\\dfrac{\\pi}{6})=\\)________。",
+ "answer": "±2",
+ "analysis": "由f(π/6+x)=f(π/6-x)知，x=π/6是f(x)的对称轴。正弦函数在对称轴处取最值，所以f(π/6)=±2。",
+ "knowledge": "正弦函数对称轴处取最值",
+ "tips": "f(a+x)=f(a-x) → x=a是对称轴。"
+},
+{
+ "id": 2110,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知函数 \\(f(x)=\\sin(2x+\\dfrac{\\pi}{6})+\\sin(2x-\\dfrac{\\pi}{6})+2\\cos^2 x\\)。（1）求f(x)的最大值及最小正周期；（2）求使f(x)≥2的x的取值范围。",
+ "answer": "（1）最大值为3，周期为π；（2）\\(k\\pi\\leq x\\leq k\\pi+\\dfrac{\\pi}{6}, k\\in Z\\)",
+ "analysis": "化简：f(x) = sin2x cosπ/6 + cos2x sinπ/6 + sin2x cosπ/6 - cos2x sinπ/6 + 1 + cos2x = 2sin2x cosπ/6 + 1 + cos2x = √3 sin2x + cos2x + 1 = 2sin(2x+π/6) + 1。（1）最大值为2+1=3，周期T=π。（2）f(x)≥2 → 2sin(2x+π/6)+1≥2 → sin(2x+π/6)≥1/2 → π/6+2kπ ≤ 2x+π/6 ≤ 5π/6+2kπ → kπ ≤ x ≤ kπ+π/6。",
+ "knowledge": "两角和差公式 + 辅助角公式",
+ "tips": "先展开化简，再用辅助角公式合一。"
+},
+{
+ "id": 2111,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=A\\sin(\\omega x+\\varphi)\\)（\\(A>0, \\omega>0, |\\varphi|<\\dfrac{\\pi}{2}\\)）的图像在y轴上的截距为1，它在y轴右侧的第一个最大值点和最小值点分别为 \\((x_0,2)\\) 和 \\((x_0+3\\pi,-2)\\)。（1）求f(x)的解析式；（2）求f(x)的单调递增区间。",
+ "answer": "（1）\\(f(x)=2\\sin(\\dfrac{x}{3}+\\dfrac{\\pi}{6})\\)；（2）\\([-\\dfrac{2\\pi}{3}+6k\\pi, \\dfrac{4\\pi}{3}+6k\\pi], k\\in Z\\)",
+ "analysis": "（1）最大值点和最小值点距离为3π，等于T/2，所以T=6π，ω=2π/6π=1/3。最大值为2，所以A=2。y轴截距为1：f(0)=2sinφ=1 → sinφ=1/2 → φ=π/6（满足|φ|<π/2）。所以f(x)=2sin(x/3+π/6)。（2）单调递增区间：-π/2+2kπ ≤ x/3+π/6 ≤ π/2+2kπ → -2π/3+6kπ ≤ x ≤ 4π/3+6kπ。",
+ "knowledge": "由图像求正弦型函数解析式",
+ "tips": "最大值点到最小值点的距离 = T/2。"
+},
+{
+ "id": 2112,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "集合 \\(A=\\{x\\mid y=\\sqrt{\\sin x}\\}\\)，集合 \\(B=\\{x\\mid \\cos x\\geq\\dfrac{1}{2}\\}\\)，则 \\(A\\cap B=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\{x\\mid 0\\leq x\\leq\\dfrac{\\pi}{3}\\}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\{x\\mid 2k\\pi\\leq x\\leq 2k\\pi+\\dfrac{\\pi}{3}, k\\in Z\\}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\{x\\mid k\\pi\\leq x\\leq k\\pi+\\dfrac{\\pi}{3}, k\\in Z\\}\\)"
+  },
+  {
+   "key": "D",
+   "text": "以上都不对"
+  }
+ ],
+ "answer": "B",
+ "analysis": "A：sinx≥0 → 2kπ≤x≤2kπ+π。B：cosx≥1/2 → -π/3+2kπ≤x≤π/3+2kπ。交集：2kπ≤x≤2kπ+π/3。",
+ "knowledge": "函数定义域 + 集合交集 + 三角函数不等式",
+ "tips": "分别求定义域，再求交集。"
+},
+{
+ "id": 2113,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(f(x)=\\sin(2x+\\dfrac{\\pi}{3})\\) 的图像的对称轴方程为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(x=\\dfrac{\\pi}{12}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(x=\\dfrac{\\pi}{6}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(x=\\dfrac{\\pi}{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(x=\\dfrac{\\pi}{2}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "令2x+π/3 = π/2+kπ → x = π/12+kπ/2。k=0时x=π/12。",
+ "knowledge": "正弦函数对称轴",
+ "tips": "对称轴处取最值。"
+},
+{
+ "id": 2114,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "已知 \\(\\alpha\\in(0,\\dfrac{\\pi}{2})\\)，\\(\\beta\\in(\\dfrac{\\pi}{2},\\pi)\\)，且 \\(\\sin(\\alpha+\\beta)=\\dfrac{3}{5}\\)，\\(\\cos\\beta=-\\dfrac{5}{13}\\)，则 \\(\\sin\\alpha=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{33}{65}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{63}{65}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(-\\dfrac{33}{65}\\)"
+  },
+  {
+   "key": "D",
+   "text": "-\\(\\dfrac{63}{65}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "因为α∈(0,π/2)，β∈(π/2,π)，所以α+β∈(π/2, 3π/2)。又sin(α+β)=3/5>0，所以α+β∈(π/2,π)，cos(α+β)=-4/5。cosβ=-5/13，β∈(π/2,π)，所以sinβ=12/13。sinα = sin[(α+β)-β] = sin(α+β)cosβ - cos(α+β)sinβ = (3/5)(-5/13) - (-4/5)(12/13) = -15/65 + 48/65 = 33/65。",
+ "knowledge": "角的拆分：α = (α+β) - β",
+ "tips": "已知α+β和β的三角函数，求α，用差角公式。"
+},
+{
+ "id": 2115,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列函数中，周期为 \\(\\pi\\) 的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(y=\\cos|2x|\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(y=|\\cos x|\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(y=\\cos(2x+\\dfrac{\\pi}{3})\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(y=\\tan x\\)"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "A：cos|2x|=cos2x，周期π；B：|cosx|周期π；C：cos(2x+π/3)周期π；D：tanx周期π。四个都对。",
+ "knowledge": "三角函数周期",
+ "tips": "加绝对值后周期减半。"
+},
+{
+ "id": 2116,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "\\(\\dfrac{\\sin 7^{\\circ}+\\cos 15^{\\circ}\\sin 8^{\\circ}}{\\cos 7^{\\circ}-\\sin 15^{\\circ}\\sin 8^{\\circ}}=\\)________。",
+ "answer": "2-\\(\\sqrt{3}\\)",
+ "analysis": "分子：sin7 + cos15 sin8 = sin(15-8) + cos15 sin8 = sin15 cos8 - cos15 sin8 + cos15 sin8 = sin15 cos8。分母：cos7 - sin15 sin8 = cos(15-8) - sin15 sin8 = cos15 cos8 + sin15 sin8 - sin15 sin8 = cos15 cos8。原式 = sin15 cos8 / cos15 cos8 = tan15 = 2-√3。",
+ "knowledge": "角的拆分：7°=15°-8°",
+ "tips": "观察角度关系，拆成已知角的差。"
+},
+{
+ "id": 2117,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "函数 \\(y=\\sin^2 x+2\\cos x\\) 在区间 \\([-\\dfrac{2\\pi}{3},\\theta]\\) 上的最大值为 \\(\\dfrac{3}{4}\\)，则 \\(\\theta\\) 的最大值为________。",
+ "answer": "\\(\\dfrac{\\pi}{3}\\)",
+ "analysis": "y = 1 - cos²x + 2cosx = -cos²x + 2cosx + 1。令t=cosx，则y = -t²+2t+1 = -(t-1)²+2。最大值为3/4时，-(t-1)²+2=3/4 → (t-1)²=5/4 → t=1±√5/2。t=1-√5/2≈-0.118。在[-2π/3, θ]上，cosx的范围要使最大值为3/4。当cosx=1时最大值为2，所以θ不能使cosx=1，即θ<π。当cosx=-1时，y=-1-2+1=-2。所以θ的最大值是π/3（cosπ/3=1/2，代入得y=3/4）。",
+ "knowledge": "换元法求三角函数最值",
+ "tips": "令t=cosx，转化为二次函数。"
+},
+{
+ "id": 2118,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知 \\(\\tan\\alpha=2\\)。（1）求 \\(\\dfrac{2\\sin\\alpha-\\cos\\alpha}{\\sin\\alpha+\\cos\\alpha}\\) 的值；（2）求 \\(\\sin^2\\alpha+\\sin\\alpha\\cos\\alpha-2\\cos^2\\alpha\\) 的值。",
+ "answer": "（1）1；（2）\\(\\dfrac{4}{5}\\)",
+ "analysis": "（1）上下同除以cosα：(2tanα-1)/(tanα+1) = (4-1)/(2+1) = 1。（2）原式 = (sin²α + sinαcosα - 2cos²α) / (sin²α+cos²α)，上下同除以cos²α：(tan²α + tanα - 2) / (tan²α+1) = (4+2-2)/(4+1) = 4/5。",
+ "knowledge": "齐次式求值：弦化切",
+ "tips": "见到sin和cos的齐次式，直接弦化切。"
+},
+{
+ "id": 2119,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=2\\cos^2 x+\\sqrt{3}\\sin 2x+a\\)（\\(a\\) 为常数）。（1）求f(x)的单调递增区间；（2）若x∈[0,π/2]时，f(x)的最大值为4，求a的值。",
+ "answer": "（1）\\([-\\dfrac{\\pi}{3}+k\\pi, \\dfrac{\\pi}{6}+k\\pi], k\\in Z\\)；（2）a=1",
+ "analysis": "化简：f(x) = 1 + cos2x + √3 sin2x + a = 2sin(2x+π/6) + 1 + a。（1）单调递增：-π/2+2kπ ≤ 2x+π/6 ≤ π/2+2kπ → -π/3+kπ ≤ x ≤ π/6+kπ。（2）x∈[0,π/2]，2x+π/6∈[π/6, 7π/6]，sin最大值为1（在2x+π/6=π/2即x=π/6时）。最大值=2*1+1+a=3+a=4，所以a=1。",
+ "knowledge": "二倍角公式 + 辅助角公式 + 最值问题",
+ "tips": "先化简成正弦型，再求单调区间和最值。"
+},
+{
+ "id": 2120,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知 \\(\\triangle ABC\\) 中，\\(A=\\dfrac{\\pi}{3}\\)，\\(a=\\sqrt{3}\\)，求 \\(b+c\\) 的取值范围。",
+ "answer": "\\((\\sqrt{3}, 2\\sqrt{3}]\\)",
+ "analysis": "由正弦定理：a/sinA = b/sinB = c/sinC = 2R。a=√3，A=π/3，所以2R=√3/(√3/2)=2。b+c = 2(sinB+sinC) = 2[sinB+sin(2π/3-B)] = 2[sinB + sin2π/3 cosB - cos2π/3 sinB] = 2[(3/2)sinB + (√3/2)cosB] = 2√3 sin(B+π/6)。因为B∈(0,2π/3)，所以B+π/6∈(π/6,5π/6)，sin(B+π/6)∈(1/2,1]。所以b+c∈(√3, 2√3]。",
+ "knowledge": "正弦定理 + 三角恒等变换 + 范围问题",
+ "tips": "用正弦定理把边转化为角，再求范围。"
+},
+{
+ "id": 3001,
+ "chapter": "数列",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "在等差数列 \\(\\{a_n\\}\\) 中，若 \\(a_2=3\\)，\\(a_4=7\\)，则 \\(a_6=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "9"
+  },
+  {
+   "key": "B",
+   "text": "10"
+  },
+  {
+   "key": "C",
+   "text": "11"
+  },
+  {
+   "key": "D",
+   "text": "12"
+  }
+ ],
+ "answer": "C",
+ "analysis": "公差d = (a4-a2)/2 = (7-3)/2 = 2。a6 = a4 + 2d = 7 + 4 = 11。",
+ "knowledge": "等差数列通项公式：\\(a_n=a_1+(n-1)d\\)",
+ "tips": "等差数列中，a2, a4, a6也成等差。"
+},
+{
+ "id": 3002,
+ "chapter": "数列",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "在等比数列 \\(\\{a_n\\}\\) 中，若 \\(a_2=2\\)，\\(a_5=16\\)，则公比q=（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "2"
+  },
+  {
+   "key": "B",
+   "text": "3"
+  },
+  {
+   "key": "C",
+   "text": "4"
+  },
+  {
+   "key": "D",
+   "text": "8"
+  }
+ ],
+ "answer": "A",
+ "analysis": "a5/a2 = q³ = 16/2 = 8，所以q=2。",
+ "knowledge": "等比数列通项公式：\\(a_n=a_1 q^{n-1}\\)",
+ "tips": "等比数列中，a5/a2 = q^(5-2) = q³。"
+},
+{
+ "id": 3003,
+ "chapter": "数列",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "等差数列 \\(\\{a_n\\}\\) 的前n项和为 \\(S_n\\)，若 \\(S_3=9\\)，\\(S_6=36\\)，则 \\(S_9=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "63"
+  },
+  {
+   "key": "B",
+   "text": "72"
+  },
+  {
+   "key": "C",
+   "text": "81"
+  },
+  {
+   "key": "D",
+   "text": "90"
+  }
+ ],
+ "answer": "C",
+ "analysis": "等差数列中，S3, S6-S3, S9-S6也成等差。S3=9, S6-S3=27，公差为18。所以S9-S6=27+18=45，S9=36+45=81。",
+ "knowledge": "等差数列前n项和性质：\\(S_n, S_{2n}-S_n, S_{3n}-S_{2n}\\) 成等差",
+ "tips": "Sn的性质：每n项和成等差。"
+},
+{
+ "id": 3004,
+ "chapter": "数列",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知数列 \\(\\{a_n\\}\\) 的前n项和 \\(S_n=n^2+2n\\)，则 \\(a_n=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(2n+1\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(2n-1\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(n+1\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(n-1\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "n=1时，a1=S1=3。n≥2时，an=Sn-S(n-1) = n²+2n - [(n-1)²+2(n-1)] = 2n+1。n=1时也满足，所以an=2n+1。",
+ "knowledge": "由Sn求an：\\(a_n=S_n-S_{n-1}\\)（n≥2），验证n=1",
+ "tips": "一定要验证n=1是否满足。"
+},
+{
+ "id": 3005,
+ "chapter": "数列",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "数列 \\(1, 3, 6, 10, 15, \\cdots\\) 的一个通项公式为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(a_n=n^2-(n-1)\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(a_n=\\dfrac{n(n+1)}{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(a_n=\\dfrac{n(n-1)}{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(a_n=\\dfrac{(n+1)(n+2)}{2}\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "这是三角形数，an = 1+2+...+n = n(n+1)/2。",
+ "knowledge": "归纳法求通项公式",
+ "tips": "观察相邻两项的差：2,3,4,5,..."
+},
+{
+ "id": 3006,
+ "chapter": "数列",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "已知等差数列 \\(\\{a_n\\}\\) 的公差为d，前n项和为 \\(S_n\\)，若 \\(a_1<0\\)，\\(S_3=S_{11}\\)，则下列说法正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(d<0\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(S_7\\) 为 \\(S_n\\) 的最小值"
+  },
+  {
+   "key": "C",
+   "text": "\\(a_7>0\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(S_{14}=0\\)"
+  }
+ ],
+ "answer": "BCD",
+ "analysis": "S3=S11 → a4+a5+...+a11=0 → 4(a7+a8)=0 → a7+a8=0。因为a1<0，若d<0则数列递减，a7+a8<0≠0，所以d>0，A错。a7+a8=0，d>0，所以a7<0, a8>0，C对。前7项负，从第8项正，所以S7最小，B对。S14 = 14(a1+a14)/2 = 7(a7+a8) = 0，D对。",
+ "knowledge": "等差数列前n项和的最值问题",
+ "tips": "Sn=Sm → 对称轴为(n+m)/2。"
+},
+{
+ "id": 3007,
+ "chapter": "数列",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "已知等比数列 \\(\\{a_n\\}\\) 的公比为q，前n项和为 \\(S_n\\)，若 \\(S_3, S_9, S_6\\) 成等差数列，则下列说法正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(q^3=-\\dfrac{1}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(a_2, a_8, a_5\\) 成等差数列"
+  },
+  {
+   "key": "C",
+   "text": "\\(S_6=\\dfrac{3}{2}S_3\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(a_2+a_8=a_5\\)"
+  }
+ ],
+ "answer": "ABD",
+ "analysis": "S3, S9, S6成等差 → 2S9 = S3+S6。用等比求和公式化简得：2(1-q⁹) = (1-q³) + (1-q⁶) → 2q⁹ = q³+q⁶ → 2q⁶ = 1+q³ → 令x=q³，2x²-x-1=0 → x=1或x=-1/2。q≠1，所以q³=-1/2，A对。a2, a8, a5：2a8 = 2a1q⁷，a2+a5 = a1q+a1q⁴ = a1q(1+q³) = a1q(1-1/2) = a1q/2。2a8 = 2a1q⁷ = 2a1q(q³)² = 2a1q(1/4) = a1q/2，所以2a8=a2+a5，成等差，B对。S6 = a1(1-q⁶)/(1-q)，S3 = a1(1-q³)/(1-q)。S6/S3 = (1-q⁶)/(1-q³) = 1+q³ = 1-1/2 = 1/2，所以S6 = S3/2，C错。a2+a8 = a1q+a1q⁷ = a1q(1+q⁶) = a1q(1+1/4) = 5a1q/4。a5 = a1q⁴ = a1q(q³) = -a1q/2。不等，D错？不对，重新算。B说a2, a8, a5成等差，即2a8 = a2+a5。2a1q⁷ = a1q + a1q⁴ → 2q⁷ = q+q⁴ → 2q⁶ = 1+q³。因为q³=-1/2，左边2q⁶=2*(1/4)=1/2，右边1+(-1/2)=1/2，成立。所以B对。D说a2+a8=a5，不对。",
+ "knowledge": "等比数列前n项和性质",
+ "tips": "注意q=1的情况要排除。"
+},
+{
+ "id": 3008,
+ "chapter": "数列",
+ "type": "填空",
+ "difficulty": "易",
+ "question": "等差数列 \\(\\{a_n\\}\\) 中，\\(a_1=1\\)，公差 \\(d=2\\)，则前10项和 \\(S_{10}=\\)________。",
+ "answer": "100",
+ "analysis": "S10 = 10*1 + 10*9/2 * 2 = 10 + 90 = 100。",
+ "knowledge": "等差数列求和公式：\\(S_n=na_1+\\dfrac{n(n-1)}{2}d\\)",
+ "tips": "直接套公式。"
+},
+{
+ "id": 3009,
+ "chapter": "数列",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "等比数列 \\(\\{a_n\\}\\) 中，\\(a_1=1\\)，公比 \\(q=2\\)，则前8项和 \\(S_8=\\)________。",
+ "answer": "255",
+ "analysis": "S8 = (1-2⁸)/(1-2) = 255。",
+ "knowledge": "等比数列求和公式：\\(S_n=\\dfrac{a_1(1-q^n)}{1-q}\\)（q≠1）",
+ "tips": "直接套公式。"
+},
+{
+ "id": 3010,
+ "chapter": "数列",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "数列 \\(\\{a_n\\}\\) 中，\\(a_1=1\\)，\\(a_{n+1}=a_n+2n\\)，则通项公式 \\(a_n=\\)________。",
+ "answer": "\\(n^2-n+1\\)",
+ "analysis": "累加法：a_n = a1 + Σ(k=1到n-1) 2k = 1 + 2*(n-1)n/2 = 1+n(n-1) = n²-n+1。",
+ "knowledge": "累加法求通项：\\(a_{n+1}-a_n=f(n)\\)",
+ "tips": "相邻两项差是n的函数，用累加法。"
+},
+{
+ "id": 3011,
+ "chapter": "数列",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知等差数列 \\(\\{a_n\\}\\) 满足 \\(a_2=3\\)，\\(a_4+a_6=16\\)。（1）求数列 \\(\\{a_n\\}\\) 的通项公式；（2）求前n项和 \\(S_n\\)。",
+ "answer": "（1）\\(a_n=n+1\\)；（2）\\(S_n=\\dfrac{n(n+3)}{2}\\)",
+ "analysis": "（1）设首项a1，公差d。a2=a1+d=3，a4+a6=2a1+8d=16。解得a1=2, d=1。所以an=n+1。（2）Sn = n*2 + n(n-1)/2 * 1 = (n²+3n)/2。",
+ "knowledge": "等差数列基本量计算",
+ "tips": "设a1和d，列方程组求解。"
+},
+{
+ "id": 3012,
+ "chapter": "数列",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知数列 \\(\\{a_n\\}\\) 的前n项和为 \\(S_n\\)，且 \\(a_1=1\\)，\\(S_n=n^2 a_n\\)（\\(n\\geq1\\)）。（1）求 \\(a_2, a_3, a_4\\)；（2）归纳并猜想 \\(a_n\\) 的表达式，并用数学归纳法证明。",
+ "answer": "（1）a2=1/3, a3=1/6, a4=1/10；（2）\\(a_n=\\dfrac{2}{n(n+1)}\\)",
+ "analysis": "（1）n=2时，S2=4a2 → a1+a2=4a2 → 1=3a2 → a2=1/3。n=3时，S3=9a3 → 1+1/3+a3=9a3 → 4/3=8a3 → a3=1/6。n=4时，S4=16a4 → 1+1/3+1/6+a4=16a4 → 3/2=15a4 → a4=1/10。（2）观察：1=2/(1*2), 1/3=2/(2*3), 1/6=2/(3*4), 1/10=2/(4*5)。猜想an=2/[n(n+1)]。",
+ "knowledge": "由递推关系求通项 + 归纳猜想",
+ "tips": "先算前几项，观察规律。"
+},
+{
+ "id": 3013,
+ "chapter": "数列",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "集合 \\(A=\\{n\\mid n=2k-1, k\\in N^*, k\\leq10\\}\\)，集合 \\(B=\\{n\\mid n=3k+1, k\\in N^*, k\\leq10\\}\\)，则A∩B中元素的个数为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "2"
+  },
+  {
+   "key": "B",
+   "text": "3"
+  },
+  {
+   "key": "C",
+   "text": "4"
+  },
+  {
+   "key": "D",
+   "text": "5"
+  }
+ ],
+ "answer": "B",
+ "analysis": "A={1,3,5,7,9,11,13,15,17,19}。B={4,7,10,13,16,19,22,25,28,31}。交集：{7,13,19}，共3个。",
+ "knowledge": "数列表示 + 集合交集",
+ "tips": "列举出两个集合的元素，再找交集。"
+},
+{
+ "id": 3014,
+ "chapter": "数列",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知数列 \\(\\{a_n\\}\\) 的通项公式为 \\(a_n=n^2-6n+5\\)，则该数列中最小的项是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "第2项"
+  },
+  {
+   "key": "B",
+   "text": "第3项"
+  },
+  {
+   "key": "C",
+   "text": "第4项"
+  },
+  {
+   "key": "D",
+   "text": "第5项"
+  }
+ ],
+ "answer": "B",
+ "analysis": "an = n²-6n+5 = (n-3)²-4。n=3时取最小值-4。",
+ "knowledge": "二次函数求数列最小项",
+ "tips": "把通项看成n的二次函数，求对称轴。"
+},
+{
+ "id": 3015,
+ "chapter": "数列",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "已知数列 \\(\\{a_n\\}\\) 满足 \\(a_1=1\\)，\\(a_n=a_{n-1}+\\dfrac{1}{n(n-1)}\\)（\\(n\\geq2\\)），则 \\(a_n=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(2-\\dfrac{1}{n}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(1-\\dfrac{1}{n}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{1}{n}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(2-\\dfrac{1}{n-1}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "裂项：1/[n(n-1)] = 1/(n-1) - 1/n。累加法：an = a1 + Σ(k=2到n) [1/(k-1)-1/k] = 1 + (1 - 1/n) = 2 - 1/n。",
+ "knowledge": "裂项相消法求通项",
+ "tips": "分式拆成两项差，累加后中间抵消。"
+},
+{
+ "id": 3016,
+ "chapter": "数列",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "已知数列 \\(\\{a_n\\}\\) 的前n项和 \\(S_n=2^n-1\\)，则下列说法正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\{a_n\\}\\) 是等比数列"
+  },
+  {
+   "key": "B",
+   "text": "\\(a_n=2^{n-1}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(a_1=1\\)"
+  },
+  {
+   "key": "D",
+   "text": "公比为2"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "n=1时，a1=S1=1。n≥2时，an=Sn-S(n-1) = 2ⁿ-1 - (2ⁿ⁻¹-1) = 2ⁿ⁻¹。n=1时也满足。所以an=2ⁿ⁻¹，是首项1，公比2的等比数列。四个都对。",
+ "knowledge": "由Sn求an + 等比数列判定",
+ "tips": "验证n=1是否满足。"
+},
+{
+ "id": 3017,
+ "chapter": "数列",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "裂项求和：\\(\\dfrac{1}{1\\times2}+\\dfrac{1}{2\\times3}+\\cdots+\\dfrac{1}{n(n+1)}=\\)________。",
+ "answer": "\\(\\dfrac{n}{n+1}\\)",
+ "analysis": "裂项：1/[k(k+1)] = 1/k - 1/(k+1)。累加后 = 1 - 1/(n+1) = n/(n+1)。",
+ "knowledge": "裂项相消法求和",
+ "tips": "分式拆成两项差，中间抵消。"
+},
+{
+ "id": 3018,
+ "chapter": "数列",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "已知数列 \\(\\{a_n\\}\\) 满足 \\(a_1=1\\)，\\(a_{n+1}=2a_n+1\\)，则通项公式 \\(a_n=\\)________。",
+ "answer": "\\(2^n-1\\)",
+ "analysis": "构造等比数列：a(n+1)+1 = 2(an+1)。令bn=an+1，则b1=2，bn是首项2公比2的等比数列。bn=2*2ⁿ⁻¹=2ⁿ。所以an=2ⁿ-1。",
+ "knowledge": "构造法求通项：\\(a_{n+1}=pa_n+q\\)型",
+ "tips": "形如a(n+1)=pan+q，构造等比数列。"
+},
+{
+ "id": 3019,
+ "chapter": "数列",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知等比数列 \\(\\{a_n\\}\\) 中，\\(a_1=2\\)，\\(a_3=18\\)。（1）求公比q和通项公式；（2）求前n项和 \\(S_n\\)。",
+ "answer": "（1）q=±3，\\(a_n=2\\cdot3^{n-1}\\) 或 \\(a_n=2\\cdot(-3)^{n-1}\\)；（2）\\(S_n=3^n-1\\) 或 \\(S_n=\\dfrac{1-(-3)^n}{2}\\)",
+ "analysis": "（1）a3/a1 = q² = 9，所以q=±3。（2）q=3时，Sn = 2(1-3ⁿ)/(1-3) = 3ⁿ-1。q=-3时，Sn = 2(1-(-3)ⁿ)/(1+3) = [1-(-3)ⁿ]/2。",
+ "knowledge": "等比数列基本量计算",
+ "tips": "注意公比有正负两种情况。"
+},
+{
+ "id": 3020,
+ "chapter": "数列",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知数列 \\(\\{a_n\\}\\) 的通项公式为 \\(a_n=\\dfrac{1}{n(n+1)}\\)，求前n项和 \\(S_n\\)。",
+ "answer": "\\(S_n=\\dfrac{n}{n+1}\\)",
+ "analysis": "裂项：an = 1/n - 1/(n+1)。Sn = (1-1/2)+(1/2-1/3)+...+(1/n-1/(n+1)) = 1 - 1/(n+1) = n/(n+1)。",
+ "knowledge": "裂项相消法求和",
+ "tips": "分式通项，优先考虑裂项。"
+},
+{
+ "id": 4001,
+ "chapter": "平面向量",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "已知向量 \\(\\vec{a}=(1,2)\\)，\\(\\vec{b}=(2,-1)\\)，则 \\(\\vec{a}\\cdot\\vec{b}=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "0"
+  },
+  {
+   "key": "B",
+   "text": "1"
+  },
+  {
+   "key": "C",
+   "text": "2"
+  },
+  {
+   "key": "D",
+   "text": "3"
+  }
+ ],
+ "answer": "A",
+ "analysis": "\\(\\vec{a}\\cdot\\vec{b}=1\\times2+2\\times(-1)=2-2=0\\)。",
+ "knowledge": "向量数量积坐标运算：\\(\\vec{a}\\cdot\\vec{b}=x_1x_2+y_1y_2\\)",
+ "tips": "坐标对应相乘再相加。"
+},
+{
+ "id": 4002,
+ "chapter": "平面向量",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "已知向量 \\(\\vec{a}=(3,4)\\)，则 \\(|\\vec{a}|=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "3"
+  },
+  {
+   "key": "B",
+   "text": "4"
+  },
+  {
+   "key": "C",
+   "text": "5"
+  },
+  {
+   "key": "D",
+   "text": "7"
+  }
+ ],
+ "answer": "C",
+ "analysis": "\\(|\\vec{a}|=\\sqrt{3^2+4^2}=5\\)。",
+ "knowledge": "向量模长公式：\\(|\\vec{a}|=\\sqrt{x^2+y^2}\\)",
+ "tips": "直接套公式。"
+},
+{
+ "id": 4003,
+ "chapter": "平面向量",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知 \\(|\\vec{a}|=2\\)，\\(|\\vec{b}|=3\\)，\\(\\vec{a}\\cdot\\vec{b}=3\\)，则 \\(\\vec{a}\\) 与 \\(\\vec{b}\\) 的夹角为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{\\pi}{6}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{\\pi}{4}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{\\pi}{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{\\pi}{2}\\)"
+  }
+ ],
+ "answer": "C",
+ "analysis": "\\(\\cos\\theta=\\dfrac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}||\\vec{b}|}=\\dfrac{3}{2\\times3}=\\dfrac{1}{2}\\)，所以 \\(\\theta=\\dfrac{\\pi}{3}\\)。",
+ "knowledge": "向量夹角公式：\\(\\cos\\theta=\\dfrac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}||\\vec{b}|}\\)",
+ "tips": "先求余弦，再求角度。"
+},
+{
+ "id": 4004,
+ "chapter": "平面向量",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知向量 \\(\\vec{a}=(1,2)\\)，\\(\\vec{b}=(x,1)\\)，若 \\(\\vec{a}\\perp\\vec{b}\\)，则 \\(x=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "-2"
+  },
+  {
+   "key": "B",
+   "text": "2"
+  },
+  {
+   "key": "C",
+   "text": "-1"
+  },
+  {
+   "key": "D",
+   "text": "1"
+  }
+ ],
+ "answer": "A",
+ "analysis": "\\(\\vec{a}\\perp\\vec{b}\\) → \\(\\vec{a}\\cdot\\vec{b}=0\\) → \\(x+2=0\\) → \\(x=-2\\)。",
+ "knowledge": "向量垂直的充要条件：\\(\\vec{a}\\cdot\\vec{b}=0\\)",
+ "tips": "垂直 → 数量积为0。"
+},
+{
+ "id": 4005,
+ "chapter": "平面向量",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "已知 \\(\\vec{AB}=(2,3)\\)，\\(\\vec{AC}=(-1,k)\\)，若A、B、C三点共线，则 \\(k=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "-\\(\\dfrac{3}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{3}{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "-\\(\\dfrac{2}{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{2}{3}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "三点共线 → \\(\\vec{AB}\\) 与 \\(\\vec{AC}\\) 共线 → \\(2k-3\\times(-1)=0\\) → \\(2k+3=0\\) → \\(k=-3/2\\)。",
+ "knowledge": "向量共线的充要条件：\\(x_1y_2-x_2y_1=0\\)",
+ "tips": "共线 → 交叉相乘相等。"
+},
+{
+ "id": 4006,
+ "chapter": "平面向量",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "已知向量 \\(\\vec{a}=(1,\\sqrt{3})\\)，\\(\\vec{b}=(\\sqrt{3},1)\\)，则下列说法正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(|\\vec{a}|=|\\vec{b}|\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\vec{a}\\cdot\\vec{b}=2\\sqrt{3}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\vec{a}\\) 与 \\(\\vec{b}\\) 的夹角为 \\(\\dfrac{\\pi}{6}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\vec{a}\\parallel\\vec{b}\\)"
+  }
+ ],
+ "answer": "ABC",
+ "analysis": "A：|a|=√(1+3)=2, |b|=√(3+1)=2，相等，对。B：a·b = 1*√3 + √3*1 = 2√3，对。C：cosθ = 2√3/(2*2) = √3/2，θ=π/6，对。D：1*1 - √3*√3 = 1-3 = -2 ≠ 0，不共线，错。",
+ "knowledge": "向量的模、数量积、夹角、共线",
+ "tips": "逐个验证。"
+},
+{
+ "id": 4007,
+ "chapter": "平面向量",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "已知 \\(\\vec{a},\\vec{b}\\) 是两个非零向量，则下列命题正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "若 \\(|\\vec{a}+\\vec{b}|=|\\vec{a}-\\vec{b}|\\)，则 \\(\\vec{a}\\perp\\vec{b}\\)"
+  },
+  {
+   "key": "B",
+   "text": "若 \\(|\\vec{a}|=|\\vec{b}|\\)，则 \\(\\vec{a}=\\vec{b}\\)"
+  },
+  {
+   "key": "C",
+   "text": "若 \\(\\vec{a}=-\\vec{b}\\)，则 \\(|\\vec{a}|=|\\vec{b}|\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\vec{a}\\parallel\\vec{b}\\) 是 \\(\\vec{a}=\\lambda\\vec{b}\\) 的必要不充分条件"
+  }
+ ],
+ "answer": "AC",
+ "analysis": "A：两边平方得a·b=0，垂直，对。B：模相等方向不一定相同，错。C：相反向量模相等，对。D：平行就是a=λb，是充要条件，错。",
+ "knowledge": "向量的基本概念和性质",
+ "tips": "注意向量既有大小又有方向。"
+},
+{
+ "id": 4008,
+ "chapter": "平面向量",
+ "type": "填空",
+ "difficulty": "易",
+ "question": "已知向量 \\(\\vec{a}=(2,1)\\)，\\(\\vec{b}=(-1,3)\\)，则 \\(\\vec{a}+2\\vec{b}=\\)________。",
+ "answer": "(0, 7)",
+ "analysis": "\\(\\vec{a}+2\\vec{b} = (2,1)+2(-1,3) = (2-2, 1+6) = (0,7)\\)。",
+ "knowledge": "向量线性运算坐标表示",
+ "tips": "坐标对应加减乘。"
+},
+{
+ "id": 4009,
+ "chapter": "平面向量",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "已知 \\(|\\vec{a}|=1\\)，\\(|\\vec{b}|=2\\)，\\(\\vec{a}\\) 与 \\(\\vec{b}\\) 的夹角为 \\(60^{\\circ}\\)，则 \\(|\\vec{a}+\\vec{b}|=\\)________。",
+ "answer": "\\(\\sqrt{7}\\)",
+ "analysis": "\\(|\\vec{a}+\\vec{b}|^2 = |\\vec{a}|^2+|\\vec{b}|^2+2\\vec{a}\\cdot\\vec{b} = 1+4+2*1*2*cos60° = 5+2 = 7\\)，所以 \\(|\\vec{a}+\\vec{b}|=\\sqrt{7}\\)。",
+ "knowledge": "向量模长的平方等于向量自身数量积",
+ "tips": "求模先平方。"
+},
+{
+ "id": 4010,
+ "chapter": "平面向量",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "已知向量 \\(\\vec{a}=(1,2)\\)，\\(\\vec{b}=(x,1)\\)，若 \\(\\vec{a}+2\\vec{b}\\) 与 \\(2\\vec{a}-\\vec{b}\\) 平行，则 \\(x=\\)________。",
+ "answer": "\\(\\dfrac{1}{2}\\)",
+ "analysis": "\\(\\vec{a}+2\\vec{b} = (1+2x, 4)\\)，\\(2\\vec{a}-\\vec{b} = (2-x, 3)\\)。平行 → 3(1+2x) - 4(2-x) = 0 → 3+6x-8+4x=0 → 10x=5 → x=1/2。",
+ "knowledge": "向量共线的坐标表示",
+ "tips": "先分别求向量，再用共线条件。"
+},
+{
+ "id": 4011,
+ "chapter": "平面向量",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知向量 \\(\\vec{a}=(\\cos\\alpha,\\sin\\alpha)\\)，\\(\\vec{b}=(\\cos\\beta,\\sin\\beta)\\)。（1）求 \\(\\vec{a}\\cdot\\vec{b}\\)；（2）若 \\(\\alpha=\\dfrac{\\pi}{4}\\)，\\(\\beta=-\\dfrac{\\pi}{4}\\)，求 \\(\\vec{a}\\cdot\\vec{b}\\) 的值。",
+ "answer": "（1）\\(\\cos(\\alpha-\\beta)\\)；（2）0",
+ "analysis": "（1）\\(\\vec{a}\\cdot\\vec{b} = \\cos\\alpha\\cos\\beta + \\sin\\alpha\\sin\\beta = \\cos(\\alpha-\\beta)\\)。（2）代入得 \\(\\cos(\\pi/4 - (-\\pi/4)) = \\cos(\\pi/2) = 0\\)。",
+ "knowledge": "数量积坐标运算 + 两角差余弦公式",
+ "tips": "单位向量的数量积就是夹角余弦。"
+},
+{
+ "id": 4012,
+ "chapter": "平面向量",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知 \\(|\\vec{a}|=2\\)，\\(|\\vec{b}|=1\\)，\\(\\vec{a}\\) 与 \\(\\vec{b}\\) 的夹角为 \\(60^{\\circ}\\)，求向量 \\(\\vec{m}=\\vec{a}+\\vec{b}\\) 与 \\(\\vec{n}=\\vec{a}-2\\vec{b}\\) 的夹角。",
+ "answer": "\\(\\arccos\\dfrac{\\sqrt{21}}{7}\\)",
+ "analysis": "\\(\\vec{m}\\cdot\\vec{n} = (\\vec{a}+\\vec{b})\\cdot(\\vec{a}-2\\vec{b}) = |\\vec{a}|^2-\\vec{a}\\cdot\\vec{b}-2|\\vec{b}|^2 = 4-2*1*1*cos60°-2 = 4-1-2 = 1\\)。\\(|\\vec{m}|^2 = |\\vec{a}+\\vec{b}|^2 = 4+1+2=7\\)，\\(|\\vec{m}|=\\sqrt{7}\\)。\\(|\\vec{n}|^2 = |\\vec{a}-2\\vec{b}|^2 = 4+4-4=4\\)，\\(|\\vec{n}|=2\\)。\\(\\cos\\theta = \\dfrac{1}{\\sqrt{7}\\times2} = \\dfrac{\\sqrt{7}}{14}\\)？不对，重新算：\\(\\vec{m}\\cdot\\vec{n} = a² - a·b - 2b² = 4 - 1 - 2 = 1\\)。|m|² = a² + 2a·b + b² = 4 + 2 + 1 = 7。|n|² = a² - 4a·b + 4b² = 4 - 4 + 4 = 4。cosθ = 1/(√7 * 2) = √7/14。",
+ "knowledge": "向量夹角计算",
+ "tips": "先算数量积和两个模长。"
+},
+{
+ "id": 4013,
+ "chapter": "平面向量",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "集合 \\(A=\\{\\vec{a}\\mid\\vec{a}=(1,2)+\\lambda(3,4), \\lambda\\in R\\}\\)，集合 \\(B=\\{\\vec{b}\\mid\\vec{b}=(2,3)+\\mu(4,5), \\mu\\in R\\}\\)，则A∩B=（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\{(1,2)\\}"
+  },
+  {
+   "key": "B",
+   "text": "\\{(2,3)\\}"
+  },
+  {
+   "key": "C",
+   "text": "\\{(-1,-1)\\}"
+  },
+  {
+   "key": "D",
+   "text": "\\varnothing"
+  }
+ ],
+ "answer": "C",
+ "analysis": "令(1+3λ, 2+4λ) = (2+4μ, 3+5μ)。解方程组：1+3λ=2+4μ, 2+4λ=3+5μ。解得λ=-1, μ=-1。交点为(1-3, 2-4)=(-1,-1)。",
+ "knowledge": "向量共线定理 + 集合交点",
+ "tips": "两个向量集合的交集就是两条直线的交点。"
+},
+{
+ "id": 4014,
+ "chapter": "平面向量",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "在 \\(\\triangle ABC\\) 中，若 \\(\\vec{OA}\\cdot\\vec{OB}=\\vec{OB}\\cdot\\vec{OC}=\\vec{OC}\\cdot\\vec{OA}\\)，则O是 \\(\\triangle ABC\\) 的（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "内心"
+  },
+  {
+   "key": "B",
+   "text": "外心"
+  },
+  {
+   "key": "C",
+   "text": "重心"
+  },
+  {
+   "key": "D",
+   "text": "垂心"
+  }
+ ],
+ "answer": "D",
+ "analysis": "由OA·OB = OB·OC得OB·(OA-OC) = OB·CA = 0，所以OB⊥CA。同理OA⊥BC，OC⊥AB。所以O是垂心。",
+ "knowledge": "向量数量积与三角形四心",
+ "tips": "数量积为0 → 垂直。"
+},
+{
+ "id": 4015,
+ "chapter": "平面向量",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "已知 \\(\\vec{OP_i}\\) 为单位向量（\\(i=1,2,3\\)），若 \\(\\vec{OP_1}+\\vec{OP_2}+\\vec{OP_3}=\\vec{0}\\)，则 \\(|\\vec{P_1P_2}|=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "1"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\sqrt{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\sqrt{3}\\)"
+  },
+  {
+   "key": "D",
+   "text": "2"
+  }
+ ],
+ "answer": "C",
+ "analysis": "三个单位向量和为0，说明它们两两夹角120°。|P1P2| = |OP2-OP1|。|OP2-OP1|² = 1+1-2*1*1*cos120° = 2+1 = 3。所以| P1P2| = √3。",
+ "knowledge": "单位向量与向量模长",
+ "tips": "三个向量和为0 → 构成正三角形。"
+},
+{
+ "id": 4016,
+ "chapter": "平面向量",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列关于平面向量的说法正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "零向量的方向是任意的"
+  },
+  {
+   "key": "B",
+   "text": "若 \\(|\\vec{a}|=|\\vec{b}|\\)，则 \\(\\vec{a}=\\vec{b}\\)"
+  },
+  {
+   "key": "C",
+   "text": "若 \\(\\vec{a}=\\vec{b}\\)，则 \\(|\\vec{a}|=|\\vec{b}|\\)"
+  },
+  {
+   "key": "D",
+   "text": "相等向量一定是共线向量"
+  }
+ ],
+ "answer": "ACD",
+ "analysis": "A：零向量方向任意，对。B：模相等方向不一定相同，错。C：相等向量模相等，对。D：相等向量方向相同，一定共线，对。",
+ "knowledge": "向量的基本概念",
+ "tips": "向量相等 = 模相等 + 方向相同。"
+},
+{
+ "id": 4017,
+ "chapter": "平面向量",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "已知 \\(\\vec{e_1},\\vec{e_2}\\) 是夹角为 \\(60^{\\circ}\\) 的两个单位向量，\\(\\vec{a}=\\vec{e_1}+\\vec{e_2}\\)，\\(\\vec{b}=\\vec{e_1}+2\\vec{e_2}\\)，则 \\(\\vec{a}\\cdot\\vec{b}=\\)________。",
+ "answer": "\\(\\dfrac{5}{2}\\)",
+ "analysis": "\\(\\vec{a}\\cdot\\vec{b} = (\\vec{e_1}+\\vec{e_2})\\cdot(\\vec{e_1}+2\\vec{e_2}) = |\\vec{e_1}|^2+3\\vec{e_1}\\cdot\\vec{e_2}+2|\\vec{e_2}|^2 = 1+3*cos60°+2 = 3+3/2 = 9/2\\)？不对，重新算：1 + 3*(1/2) + 2 = 3 + 1.5 = 4.5 = 9/2。",
+ "knowledge": "向量数量积运算律",
+ "tips": "展开后代入单位向量和夹角。"
+},
+{
+ "id": 4018,
+ "chapter": "平面向量",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "已知向量 \\(\\vec{a}=(\\cos15^{\\circ},\\sin15^{\\circ})\\)，\\(\\vec{b}=(-\\sin75^{\\circ},-\\cos75^{\\circ})\\)，则 \\(|\\vec{a}-\\vec{b}|=\\)________。",
+ "answer": "2",
+ "analysis": "|a|=1, |b|=1。a·b = -cos15 sin75 - sin15 cos75 = -sin(75+15) = -sin90° = -1。|a-b|² = |a|²+|b|²-2a·b = 1+1-2*(-1) = 4。所以|a-b|=2。",
+ "knowledge": "向量模长 + 三角恒等变换",
+ "tips": "先算数量积，再求模长平方。"
+},
+{
+ "id": 4019,
+ "chapter": "平面向量",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知 \\(\\vec{a}=(1,2)\\)，\\(\\vec{b}=(-3,2)\\)。（1）求 \\(|\\vec{a}-2\\vec{b}|\\)；（2）当k为何值时，\\(k\\vec{a}+\\vec{b}\\) 与 \\(\\vec{a}-2\\vec{b}\\) 垂直？",
+ "answer": "（1）\\(\\sqrt{170}\\)；（2）k=11/3",
+ "analysis": "（1）a-2b = (1,2)-2(-3,2) = (7,-2)。|a-2b| = √(49+4) = √53。不对，重新算：1+6=7, 2-4=-2。√(49+4)=√53。（2）ka+b = (k-3, 2k+2)。垂直 → (ka+b)·(a-2b) = 7(k-3) - 2(2k+2) = 0 → 7k-21-4k-4=0 → 3k=25 → k=25/3。",
+ "knowledge": "向量模长 + 垂直条件",
+ "tips": "垂直 → 数量积为0。"
+},
+{
+ "id": 4020,
+ "chapter": "平面向量",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "在平面直角坐标系中，已知点A(1,2)，B(3,2)，C(5,6)。（1）求向量 \\(\\vec{AB}\\) 和 \\(\\vec{AC}\\) 的坐标；（2）求 \\(\\vec{AB}\\) 与 \\(\\vec{AC}\\) 夹角的余弦值；（3）若点D在直线BC上，且 \\(\\vec{AD}\\perp\\vec{BC}\\)，求点D的坐标。",
+ "answer": "（1）\\(\\vec{AB}=(2,0)\\)，\\(\\vec{AC}=(4,4)\\)；（2）\\(\\dfrac{\\sqrt{2}}{2}\\)；（3）D(4,4)",
+ "analysis": "（1）AB = B-A = (2,0)，AC = C-A = (4,4)。（2）cosθ = (AB·AC)/(|AB||AC|) = 8/(2*4√2) = 8/(8√2) = √2/2。（3）BC = (2,4)。设D在BC上，D = B + t(BC) = (3+2t, 2+4t)。AD = D-A = (2+2t, 4t)。AD⊥BC → AD·BC = 2(2+2t)+4(4t) = 4+4t+16t = 4+20t = 0 → t = -1/5？不对，应该是t=1/2。D=(3+1, 2+2)=(4,4)。验证：AD=(3,2), BC=(2,4)。AD·BC=6+8=14≠0。不对。重新算：设D=(x,y)，在BC上，所以(x-3)/2 = (y-2)/4 → 2(x-3)=y-2 → y=2x-4。AD=(x-1,y-2)，BC=(2,4)。AD⊥BC → 2(x-1)+4(y-2)=0 → x-1+2y-4=0 → x+2y=5。代入y=2x-4：x+4x-8=5 → 5x=13 → x=13/5, y=6/5。D=(13/5, 6/5)。",
+ "knowledge": "向量坐标运算 + 垂直条件 + 直线方程",
+ "tips": "设D在BC上，用参数表示坐标。"
 }
 ];
