@@ -29744,5 +29744,405 @@ const CHAPTER_DATA = [
  "analysis": "（1）每件利润：x-20。销售量：500-10(x-30)=800-10x。y=(x-20)(800-10x)=-10x²+1000x-16000。（2）y=-10(x-50)²+9000。当x=50时，y最大=9000。",
  "knowledge": "二次函数的实际应用：利润最值",
  "tips": "利润=每件利润×销售量。"
+},
+{
+ "id": 30001,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "\\(\\sin 30^\\circ=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{1}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{\\sqrt{2}}{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{\\sqrt{3}}{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "1"
+  }
+ ],
+ "answer": "A",
+ "analysis": "sin30° = 1/2。",
+ "knowledge": "特殊角的三角函数值",
+ "tips": "记住30°角的正弦值。"
+},
+{
+ "id": 30002,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "易",
+ "question": "\\(\\cos 60^\\circ=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{1}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{\\sqrt{2}}{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{\\sqrt{3}}{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "1"
+  }
+ ],
+ "answer": "A",
+ "analysis": "cos60° = 1/2。",
+ "knowledge": "特殊角的三角函数值",
+ "tips": "记住60°角的余弦值。"
+},
+{
+ "id": 30003,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "\\(\\sin^2\\alpha+\\cos^2\\alpha=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "0"
+  },
+  {
+   "key": "B",
+   "text": "1"
+  },
+  {
+   "key": "C",
+   "text": "2"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{1}{2}\\)"
+  }
+ ],
+ "answer": "B",
+ "analysis": "同角三角函数的基本关系：sin²α + cos²α = 1。",
+ "knowledge": "同角三角函数的基本关系：\\(\\sin^2\\alpha+\\cos^2\\alpha=1\\)",
+ "tips": "这是基本恒等式。"
+},
+{
+ "id": 30004,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(y=\\sin x\\) 的最大值为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "-1"
+  },
+  {
+   "key": "B",
+   "text": "0"
+  },
+  {
+   "key": "C",
+   "text": "1"
+  },
+  {
+   "key": "D",
+   "text": "2"
+  }
+ ],
+ "answer": "C",
+ "analysis": "sinx的取值范围是[-1,1]。最大值是1。",
+ "knowledge": "正弦函数的值域：\\([-1, 1]\\)",
+ "tips": "正弦函数最大值1，最小值-1。"
+},
+{
+ "id": 30005,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "函数 \\(y=\\cos x\\) 的周期为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{\\pi}{2}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\pi\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(2\\pi\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(4\\pi\\)"
+  }
+ ],
+ "answer": "C",
+ "analysis": "余弦函数的周期是2π。",
+ "knowledge": "余弦函数的周期：\\(2\\pi\\)",
+ "tips": "正弦和余弦的周期都是2π。"
+},
+{
+ "id": 30006,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列函数中，是奇函数的有（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(y=\\sin x\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(y=\\cos x\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(y=\\tan x\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(y=|\\sin x|\\)"
+  }
+ ],
+ "answer": "AC",
+ "analysis": "A：sin(-x)=-sinx，奇函数，对。B：cos(-x)=cosx，偶函数，错。C：tan(-x)=-tanx，奇函数，对。D：|sin(-x)|=|sinx|，偶函数，错。",
+ "knowledge": "三角函数的奇偶性",
+ "tips": "正弦和正切是奇函数，余弦是偶函数。"
+},
+{
+ "id": 30007,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "已知 \\(\\sin\\alpha=\\dfrac{3}{5}\\)，且\\(\\alpha\\)是第二象限角，则下列结论正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\cos\\alpha=-\\dfrac{4}{5}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\tan\\alpha=-\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\cos\\alpha=\\dfrac{4}{5}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\tan\\alpha=\\dfrac{3}{4}\\)"
+  }
+ ],
+ "answer": "AB",
+ "analysis": "第二象限角，cosα<0。cosα = -√(1-sin²α) = -√(1-9/25) = -√(16/25) = -4/5。tanα = sinα/cosα = (3/5)/(-4/5) = -3/4。",
+ "knowledge": "同角三角函数的基本关系",
+ "tips": "注意象限决定符号。"
+},
+{
+ "id": 30008,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "易",
+ "question": "\\(\\tan 45^\\circ=\\)________。",
+ "answer": "1",
+ "analysis": "tan45° = 1。",
+ "knowledge": "特殊角的三角函数值",
+ "tips": "45°角的正切值为1。"
+},
+{
+ "id": 30009,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "函数 \\(y=2\\sin x\\) 的振幅为________。",
+ "answer": "2",
+ "analysis": "y=Asinx的振幅是|A|。所以振幅是2。",
+ "knowledge": "正弦函数的振幅",
+ "tips": "A就是振幅。"
+},
+{
+ "id": 30010,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "函数 \\(y=\\sin(2x)\\) 的周期为________。",
+ "answer": "\\(\\pi\\)",
+ "analysis": "y=sin(ωx)的周期是2π/ω。ω=2，周期=2π/2=π。",
+ "knowledge": "正弦函数的周期：\\(T=\\dfrac{2\\pi}{\\omega}\\)",
+ "tips": "周期公式。"
+},
+{
+ "id": 30011,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知 \\(\\sin\\alpha=\\dfrac{4}{5}\\)，且\\(\\alpha\\)是第一象限角，求\\(\\cos\\alpha\\)和\\(\\tan\\alpha\\)的值。",
+ "answer": "\\(\\cos\\alpha=\\dfrac{3}{5}\\)，\\(\\tan\\alpha=\\dfrac{4}{3}\\)",
+ "analysis": "第一象限角，cosα>0。cosα = √(1-sin²α) = √(1-16/25) = √(9/25) = 3/5。tanα = sinα/cosα = (4/5)/(3/5) = 4/3。",
+ "knowledge": "同角三角函数的基本关系",
+ "tips": "第一象限全为正。"
+},
+{
+ "id": 30012,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "求函数 \\(y=\\sin x+\\cos x\\) 的最大值和最小值。",
+ "answer": "最大值\\(\\sqrt{2}\\)，最小值-\\(\\sqrt{2}\\)",
+ "analysis": "y = sinx + cosx = √2 sin(x + π/4)。最大值是√2，最小值是-√2。",
+ "knowledge": "辅助角公式：\\(a\\sin x+b\\cos x=\\sqrt{a^2+b^2}\\sin(x+\\varphi)\\)",
+ "tips": "用辅助角公式化简。"
+},
+{
+ "id": 30013,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "集合 \\(A=\\{x\\mid \\sin x=0\\}\\)，集合 \\(B=\\{x\\mid \\cos x=1\\}\\)，则A与B的关系是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(A\\subseteq B\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(B\\subseteq A\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(A=B\\)"
+  },
+  {
+   "key": "D",
+   "text": "以上都不对"
+  }
+ ],
+ "answer": "B",
+ "analysis": "sinx=0 → x=kπ。A={kπ, k∈Z}。cosx=1 → x=2kπ。B={2kπ, k∈Z}。B的元素都是偶数倍π，都是A的元素。所以B⊆A。",
+ "knowledge": "三角函数与集合的关系",
+ "tips": "先解方程，再比较集合。"
+},
+{
+ "id": 30014,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "为了得到函数 \\(y=\\sin(2x+\\dfrac{\\pi}{3})\\) 的图像，只需把函数 \\(y=\\sin 2x\\) 的图像（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "向左平移\\(\\dfrac{\\pi}{3}\\)个单位"
+  },
+  {
+   "key": "B",
+   "text": "向右平移\\(\\dfrac{\\pi}{3}\\)个单位"
+  },
+  {
+   "key": "C",
+   "text": "向左平移\\(\\dfrac{\\pi}{6}\\)个单位"
+  },
+  {
+   "key": "D",
+   "text": "向右平移\\(\\dfrac{\\pi}{6}\\)个单位"
+  }
+ ],
+ "answer": "C",
+ "analysis": "y=sin(2x+π/3) = sin[2(x+π/6)]。所以是把y=sin2x向左平移π/6个单位。",
+ "knowledge": "三角函数图像的平移变换",
+ "tips": "注意x的系数，平移量是相位差除以系数。"
+},
+{
+ "id": 30015,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列关于正弦函数的说法正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "正弦函数是周期函数"
+  },
+  {
+   "key": "B",
+   "text": "正弦函数是奇函数"
+  },
+  {
+   "key": "C",
+   "text": "正弦函数的图像关于原点对称"
+  },
+  {
+   "key": "D",
+   "text": "正弦函数在\\(\\mathbb{R}\\)上单调递增"
+  }
+ ],
+ "answer": "ABC",
+ "analysis": "A：正弦函数是周期函数，对。B：sin(-x)=-sinx，奇函数，对。C：奇函数图像关于原点对称，对。D：正弦函数在R上不是单调的，错。",
+ "knowledge": "正弦函数的性质",
+ "tips": "记住正弦函数的各种性质。"
+},
+{
+ "id": 30016,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "\\(\\sin 15^\\circ\\cos 15^\\circ=\\)________。",
+ "answer": "\\(\\dfrac{1}{4}\\)",
+ "analysis": "sin15°cos15° = (1/2)sin30° = (1/2)*(1/2) = 1/4。",
+ "knowledge": "二倍角公式：\\(\\sin 2\\alpha=2\\sin\\alpha\\cos\\alpha\\)",
+ "tips": "逆用二倍角公式。"
+},
+{
+ "id": 30017,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "函数 \\(y=3\\sin(2x+\\dfrac{\\pi}{6})\\) 的最大值为________。",
+ "answer": "3",
+ "analysis": "sin的最大值是1，所以y的最大值是3*1=3。",
+ "knowledge": "正弦型函数的最值",
+ "tips": "A就是最大值。"
+},
+{
+ "id": 30018,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知角\\(\\alpha\\)终边上一点P(3, 4)，求\\(\\sin\\alpha\\)，\\(\\cos\\alpha\\)，\\(\\tan\\alpha\\)的值。",
+ "answer": "\\(\\sin\\alpha=\\dfrac{4}{5}\\)，\\(\\cos\\alpha=\\dfrac{3}{5}\\)，\\(\\tan\\alpha=\\dfrac{4}{3}\\)",
+ "analysis": "r = √(9+16) = 5。sinα = y/r = 4/5。cosα = x/r = 3/5。tanα = y/x = 4/3。",
+ "knowledge": "三角函数的定义",
+ "tips": "r=√(x²+y²)。"
+},
+{
+ "id": 30019,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "求函数 \\(y=\\sin^2 x+\\sin x+1\\) 的最大值和最小值。",
+ "answer": "最大值3，最小值\\(\\dfrac{3}{4}\\)",
+ "analysis": "令t = sinx，t∈[-1,1]。y = t²+t+1 = (t+1/2)²+3/4。当t=-1/2时，最小值3/4。当t=1时，最大值=1+1+1=3。",
+ "knowledge": "换元法求三角函数的最值",
+ "tips": "令t=sinx，转化为二次函数。"
+},
+{
+ "id": 30020,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=A\\sin(\\omega x+\\varphi)\\)（A>0, \\(\\omega>0\\)）的图像如图所示：最大值为2，最小正周期为π，且过点(0, 1)。（1）求函数f(x)的解析式；（2）求函数f(x)的单调递增区间。",
+ "answer": "（1）\\(f(x)=2\\sin(2x+\\dfrac{\\pi}{6})\\)；（2）\\([k\\pi-\\dfrac{\\pi}{3}, k\\pi+\\dfrac{\\pi}{6}]\\)，\\(k\\in\\mathbb{Z}\\)",
+ "analysis": "（1）最大值2 → A=2。周期π → 2π/ω=π → ω=2。过点(0,1)：2sinφ=1 → sinφ=1/2 → φ=π/6。所以f(x)=2sin(2x+π/6)。（2）令-π/2+2kπ≤2x+π/6≤π/2+2kπ。解得：-π/3+kπ≤x≤π/6+kπ。",
+ "knowledge": "由图像求三角函数解析式",
+ "tips": "先求A，再求ω，最后求φ。"
 }
 ];
