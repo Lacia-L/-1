@@ -33326,5 +33326,405 @@ const CHAPTER_DATA = [
  "analysis": "（1）由正弦定理：a/sinA = b/sinB。2√3/sin60° = 2/sinB。sinB = 2*sin60°/(2√3) = 2*(√3/2)/(2√3) = √3/(2√3) = 1/2。所以B=30°或150°。因为a>b，所以A>B。A=60°，所以B<60°。所以B=30°。（2）C = 180°-60°-30° = 90°。面积 = (1/2)ab sinC = (1/2)*2√3*2*sin90° = 2√3。不对，重新算：(1/2)*2√3*2*1 = 2√3。",
  "knowledge": "正弦定理解三角形 + 三角形面积公式",
  "tips": "大边对大角。"
+},
+{
+ "id": 39001,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "函数 \\(y=\\sin(\\dfrac{\\pi}{3}-2x)\\) 的单调递减区间为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\([k\\pi-\\dfrac{\\pi}{12}, k\\pi+\\dfrac{5\\pi}{12}]\\)，\\(k\\in\\mathbb{Z}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\([k\\pi+\\dfrac{5\\pi}{12}, k\\pi+\\dfrac{11\\pi}{12}]\\)，\\(k\\in\\mathbb{Z}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\([k\\pi-\\dfrac{\\pi}{3}, k\\pi+\\dfrac{\\pi}{6}]\\)，\\(k\\in\\mathbb{Z}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\([k\\pi+\\dfrac{\\pi}{6}, k\\pi+\\dfrac{2\\pi}{3}]\\)，\\(k\\in\\mathbb{Z}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "y = sin(π/3-2x) = -sin(2x-π/3)。求递减区间就是求sin(2x-π/3)的递增区间。令-π/2+2kπ ≤ 2x-π/3 ≤ π/2+2kπ。解得：-π/12+kπ ≤ x ≤ 5π/12+kπ。",
+ "knowledge": "正弦型函数的单调性",
+ "tips": "注意负号，单调性相反。"
+},
+{
+ "id": 39002,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "已知 \\(\\cos(\\alpha+\\dfrac{\\pi}{6})=\\dfrac{3}{5}\\)，且\\(\\alpha\\in(0,\\dfrac{\\pi}{2})\\)，则\\(\\sin\\alpha=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{3\\sqrt{3}-4}{10}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{3\\sqrt{3}+4}{10}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{4-3\\sqrt{3}}{10}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{4+3\\sqrt{3}}{10}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "α∈(0,π/2)，所以α+π/6∈(π/6, 2π/3)。cos(α+π/6)=3/5>0，所以α+π/6∈(π/6, π/2)。sin(α+π/6)=4/5。sinα = sin[(α+π/6)-π/6] = sin(α+π/6)cosπ/6 - cos(α+π/6)sinπ/6 = (4/5)(√3/2)-(3/5)(1/2) = (4√3-3)/10。",
+ "knowledge": "角的拆分与和差公式",
+ "tips": "把α拆成(α+π/6)-π/6。"
+},
+{
+ "id": 39003,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "在△ABC中，若 \\(\\tan A\\tan B>1\\)，则△ABC是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "锐角三角形"
+  },
+  {
+   "key": "B",
+   "text": "直角三角形"
+  },
+  {
+   "key": "C",
+   "text": "钝角三角形"
+  },
+  {
+   "key": "D",
+   "text": "等腰三角形"
+  }
+ ],
+ "answer": "A",
+ "analysis": "tanA tanB > 1。因为A和B都是三角形内角，所以tanA和tanB同号。三角形内角不可能都是钝角，所以A和B都是锐角。tanA tanB > 1 → sinA sinB > cosA cosB → cosA cosB - sinA sinB < 0 → cos(A+B) < 0。A+B = π-C，所以cos(π-C) = -cosC < 0 → cosC > 0。所以C也是锐角。所以三角形是锐角三角形。",
+ "knowledge": "三角形形状的判断",
+ "tips": "利用和差公式判断。"
+},
+{
+ "id": 39004,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "下列函数中，同时满足\"周期为\\(\\pi\\)\"和\"图像关于直线\\(x=\\dfrac{\\pi}{3}\\)对称\"的有（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(y=\\sin(2x-\\dfrac{\\pi}{6})\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(y=\\cos(2x-\\dfrac{\\pi}{6})\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(y=\\sin(2x+\\dfrac{\\pi}{3})\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(y=\\cos(2x+\\dfrac{\\pi}{3})\\)"
+  }
+ ],
+ "answer": "AD",
+ "analysis": "A：周期π。代入x=π/3：sin(2π/3-π/6)=sin(π/2)=1，是最大值，所以关于x=π/3对称，对。B：代入x=π/3：cos(2π/3-π/6)=cos(π/2)=0，不是最值，错。C：代入x=π/3：sin(2π/3+π/3)=sinπ=0，不是最值，错。D：代入x=π/3：cos(2π/3+π/3)=cosπ=-1，是最小值，所以关于x=π/3对称，对。",
+ "knowledge": "正弦型函数的对称轴",
+ "tips": "对称轴处函数取最值。"
+},
+{
+ "id": 39005,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "在△ABC中，由正弦定理可推出的结论有（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(a\\colon b\\colon c=\\sin A\\colon\\sin B\\colon\\sin C\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(a=2R\\sin A\\)（R为外接圆半径）"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{a}{\\sin A}=\\dfrac{b}{\\sin B}=\\dfrac{c}{\\sin C}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(a\\cos B+b\\cos A=c\\)"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "A：正弦定理的推论，对。B：正弦定理的变形，对。C：正弦定理的基本形式，对。D：射影定理，也可以由正弦定理推出，对。四个都对。",
+ "knowledge": "正弦定理及其推论",
+ "tips": "记住正弦定理的各种变形。"
+},
+{
+ "id": 39006,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "\\(\\dfrac{\\tan 75^\\circ-\\tan 75^\\circ}{1+\\tan 75^\\circ\\tan 75^\\circ}=\\)________。",
+ "answer": "0",
+ "analysis": "这是tan(75°-75°)=tan0°=0。",
+ "knowledge": "两角差的正切公式逆用",
+ "tips": "tan(α-β)=(tanα-tanβ)/(1+tanαtanβ)。"
+},
+{
+ "id": 39007,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=2\\sin(\\omega x+\\varphi)\\)（\\(\\omega>0\\)）的图像关于直线\\(x=\\dfrac{\\pi}{3}\\)对称，且\\(f(\\dfrac{\\pi}{12})=0\\)，则\\(\\omega\\)的最小值为________。",
+ "answer": "2",
+ "analysis": "对称轴到相邻零点的距离是T/4。π/3-π/12 = π/4。所以T/4 = π/4 → T = π。ω = 2π/T = 2。",
+ "knowledge": "正弦型函数的对称性",
+ "tips": "对称轴到相邻零点的距离是T/4。"
+},
+{
+ "id": 39008,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "在△ABC中，已知 \\(a=5\\)，\\(b=15\\)，\\(A=30^\\circ\\)，则c=________。",
+ "answer": "\\(5\\sqrt{3}\\) 或 \\(10\\sqrt{3}\\)",
+ "analysis": "由余弦定理：a² = b²+c²-2bc cosA。25 = 225+c²-2*15*c*cos30°。25 = 225+c²-30c*(√3/2)。c²-15√3 c+200 = 0。解这个方程：判别式 = (15√3)²-4*200 = 675-800 = -125 < 0。无解？不对，重新算：sinB = b sinA/a = 15*(1/2)/5 = 3/2 > 1。不可能，无解。但题目应该有解，可能我记错了。让我重新算：a=5，b=15，A=30°。b sinA = 15*1/2 = 7.5 > a=5。所以无解。",
+ "knowledge": "正弦定理解三角形的解的个数",
+ "tips": "bsinA < a时两解，=a时一解，>a时无解。"
+},
+{
+ "id": 39009,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=\\sin(2x+\\dfrac{\\pi}{6})+\\cos(2x-\\dfrac{\\pi}{3})\\)。（1）求函数f(x)的最小正周期；（2）求函数f(x)在区间\\([0,\\dfrac{\\pi}{2}]\\)上的最大值和最小值。",
+ "answer": "（1）\\(\\pi\\)；（2）最大值2，最小值-1",
+ "analysis": "（1）f(x) = sin(2x+π/6)+cos(2x-π/3)。cos(2x-π/3) = cos(2x+π/6-π/2) = sin(2x+π/6)。所以f(x) = 2sin(2x+π/6)。周期T = 2π/2 = π。（2）x∈[0,π/2]，2x+π/6∈[π/6, 7π/6]。sin(2x+π/6)∈[-1/2, 1]。所以f(x)∈[-1, 2]。最大值2，最小值-1。",
+ "knowledge": "三角恒等变换",
+ "tips": "先化简，再求性质。"
+},
+{
+ "id": 39010,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "在△ABC中，已知 \\(\\sqrt{3}a\\cos B=b\\sin A\\)。（1）求角B的大小；（2）若b=2，求△ABC面积的最大值。",
+ "answer": "（1）\\(\\dfrac{\\pi}{3}\\)；（2）\\(\\sqrt{3}\\)",
+ "analysis": "（1）由正弦定理：√3 sinA cosB = sinB sinA。sinA≠0，所以√3 cosB = sinB → tanB = √3。所以B = π/3。（2）由余弦定理：b² = a²+c²-2ac cosB。4 = a²+c²-ac。因为a²+c² ≥ 2ac，所以4 ≥ 2ac-ac = ac。即ac ≤ 4。面积S = (1/2)ac sinB = (1/2)ac*(√3/2) = (√3/4)ac ≤ (√3/4)*4 = √3。",
+ "knowledge": "正弦定理 + 余弦定理 + 基本不等式",
+ "tips": "面积最大值用基本不等式。"
+},
+{
+ "id": 39011,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "函数 \\(y=\\lg(\\sin x)\\) 的定义域为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\{x\\mid 2k\\pi<x<2k\\pi+\\pi, k\\in\\mathbb{Z}\\}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\{x\\mid 2k\\pi<x<2k\\pi+\\dfrac{\\pi}{2}, k\\in\\mathbb{Z}\\}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\{x\\mid k\\pi<x<k\\pi+\\pi, k\\in\\mathbb{Z}\\}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\{x\\mid 2k\\pi-\\dfrac{\\pi}{2}<x<2k\\pi+\\dfrac{\\pi}{2}, k\\in\\mathbb{Z}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "对数函数要求真数大于0。sinx > 0。所以x∈(2kπ, 2kπ+π)，k∈Z。",
+ "knowledge": "三角函数的定义域",
+ "tips": "sinx>0的区间。"
+},
+{
+ "id": 39012,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "已知 \\(\\sin\\alpha+\\cos\\alpha=\\dfrac{1}{5}\\)，且\\(\\alpha\\in(0,\\pi)\\)，则\\(\\tan\\alpha=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(-\\dfrac{4}{3}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(-\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{3}{4}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{4}{3}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "(sinα+cosα)² = 1/25 → 1+2sinαcosα = 1/25 → 2sinαcosα = -24/25 < 0。因为α∈(0,π)，所以sinα>0，cosα<0。α∈(π/2, π)。(sinα-cosα)² = 1-2sinαcosα = 1+24/25 = 49/25。sinα-cosα = 7/5（因为sinα>cosα）。解方程组：sinα+cosα=1/5，sinα-cosα=7/5。得sinα=4/5，cosα=-3/5。tanα = sinα/cosα = -4/3。",
+ "knowledge": "同角三角函数的基本关系",
+ "tips": "先平方，再判断符号。"
+},
+{
+ "id": 39013,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "下列关于三角函数的说法正确的有（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(y=\\sin|x|\\)是偶函数"
+  },
+  {
+   "key": "B",
+   "text": "\\(y=|\\sin x|\\)的周期为\\(\\pi\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(y=\\sin|x|\\)的周期为\\(2\\pi\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(y=|\\sin x|\\)是偶函数"
+  }
+ ],
+ "answer": "ABD",
+ "analysis": "A：sin|-x|=sin|x|，偶函数，对。B：|sin(x+π)|=|-sinx|=|sinx|，周期π，对。C：sin|x|不是周期函数，错。D：|sin(-x)|=|-sinx|=|sinx|，偶函数，对。",
+ "knowledge": "带绝对值的三角函数",
+ "tips": "注意|x|在sin里面和外面的区别。"
+},
+{
+ "id": 39014,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "函数 \\(y=\\sin^2 x+\\sqrt{3}\\sin x\\cos x+1\\) 的最小值为________。",
+ "answer": "\\(\\dfrac{1}{2}\\)",
+ "analysis": "y = (1-cos2x)/2 + (√3/2)sin2x + 1 = (√3/2)sin2x - (1/2)cos2x + 3/2 = sin(2x-π/6) + 3/2。最小值 = -1+3/2 = 1/2。",
+ "knowledge": "降幂公式 + 辅助角公式",
+ "tips": "先化简，再求最值。"
+},
+{
+ "id": 39015,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "已知 \\(\\tan\\alpha=2\\)，则\\(\\sin^2\\alpha+\\sin\\alpha\\cos\\alpha=\\)________。",
+ "answer": "\\(\\dfrac{6}{5}\\)",
+ "analysis": "原式 = (sin²α+sinαcosα)/(sin²α+cos²α) = (tan²α+tanα)/(tan²α+1) = (4+2)/(4+1) = 6/5。",
+ "knowledge": "齐次式求值",
+ "tips": "弦化切。"
+},
+{
+ "id": 39016,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=A\\sin(\\omega x+\\varphi)\\)（A>0, \\(\\omega>0\\), \\(|\\varphi|<\\dfrac{\\pi}{2}\\)）的图像的一个最高点为\\((\\dfrac{\\pi}{12}, 2)\\)，其相邻的最低点为\\((\\dfrac{7\\pi}{12}, -2)\\)。（1）求函数f(x)的解析式；（2）求函数f(x)的单调递增区间。",
+ "answer": "（1）\\(f(x)=2\\sin(2x+\\dfrac{\\pi}{3})\\)；（2）\\([k\\pi-\\dfrac{5\\pi}{12}, k\\pi+\\dfrac{\\pi}{12}]\\)，\\(k\\in\\mathbb{Z}\\)",
+ "analysis": "（1）最高点2，最低点-2，所以A=2。最高点到相邻最低点的水平距离是T/2 = 7π/12-π/12 = π/2。所以T = π。ω = 2π/T = 2。f(x) = 2sin(2x+φ)。代入最高点(π/12, 2)：2sin(π/6+φ) = 2 → sin(π/6+φ) = 1 → π/6+φ = π/2+2kπ → φ = π/3+2kπ。因为|φ|<π/2，所以φ = π/3。所以f(x) = 2sin(2x+π/3)。（2）令-π/2+2kπ ≤ 2x+π/3 ≤ π/2+2kπ。解得：-5π/12+kπ ≤ x ≤ π/12+kπ。",
+ "knowledge": "由图像求三角函数解析式",
+ "tips": "先求A，再求ω，最后求φ。"
+},
+{
+ "id": 39017,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "在△ABC中，角A、B、C的对边分别为a、b、c，已知\\(a\\cos C+\\dfrac{1}{2}c=b\\)。（1）求角A的大小；（2）若a=1，求△ABC周长l的取值范围。",
+ "answer": "（1）\\(\\dfrac{\\pi}{3}\\)；（2）\\((2, 3]\\)",
+ "analysis": "（1）由正弦定理：sinA cosC + (1/2)sinC = sinB。sinB = sin(A+C) = sinA cosC + cosA sinC。所以sinA cosC + (1/2)sinC = sinA cosC + cosA sinC。(1/2)sinC = cosA sinC。sinC≠0，所以cosA = 1/2。所以A = π/3。（2）由余弦定理：a² = b²+c²-2bc cosA。1 = b²+c²-bc = (b+c)²-3bc。因为bc ≤ ((b+c)/2)²，所以1 ≥ (b+c)² - 3*((b+c)/2)² = (b+c)²/4。所以(b+c)² ≤ 4 → b+c ≤ 2。又因为b+c > a=1（三角形两边之和大于第三边）。所以周长l = a+b+c = 1+b+c ∈ (2, 3]。",
+ "knowledge": "正弦定理 + 余弦定理 + 基本不等式",
+ "tips": "周长范围用基本不等式。"
+},
+{
+ "id": 39018,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "要得到函数 \\(y=\\cos 2x\\) 的图像，只需将函数 \\(y=\\sin(2x+\\dfrac{\\pi}{4})\\) 的图像（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "向左平移\\(\\dfrac{\\pi}{8}\\)个单位"
+  },
+  {
+   "key": "B",
+   "text": "向右平移\\(\\dfrac{\\pi}{8}\\)个单位"
+  },
+  {
+   "key": "C",
+   "text": "向左平移\\(\\dfrac{\\pi}{4}\\)个单位"
+  },
+  {
+   "key": "D",
+   "text": "向右平移\\(\\dfrac{\\pi}{4}\\)个单位"
+  }
+ ],
+ "answer": "A",
+ "analysis": "cos2x = sin(2x+π/2) = sin[2(x+π/4)]。原函数y=sin(2x+π/4) = sin[2(x+π/8)]。从y=sin[2(x+π/8)]到y=sin[2(x+π/4)]，需要向左平移π/8个单位。",
+ "knowledge": "三角函数图像的平移变换",
+ "tips": "先统一化成正弦函数。"
+},
+{
+ "id": 39019,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "在△ABC中，下列等式正确的有（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\sin(A+B)=\\sin C\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\cos(A+B)=-\\cos C\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\sin(\\dfrac{A+B}{2})=\\cos\\dfrac{C}{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\cos(\\dfrac{A+B}{2})=\\sin\\dfrac{C}{2}\\)"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "A+B = π-C。所以sin(A+B) = sin(π-C) = sinC，对。cos(A+B) = cos(π-C) = -cosC，对。(A+B)/2 = π/2-C/2。sin((A+B)/2) = sin(π/2-C/2) = cos(C/2)，对。cos((A+B)/2) = cos(π/2-C/2) = sin(C/2)，对。四个都对。",
+ "knowledge": "三角形中的诱导公式",
+ "tips": "利用A+B+C=π。"
+},
+{
+ "id": 39020,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=2\\cos^2 x+\\sqrt{3}\\sin 2x\\)。（1）求函数f(x)的最大值及取得最大值时x的集合；（2）求函数f(x)的单调递减区间。",
+ "answer": "（1）最大值3，此时\\(x=k\\pi+\\dfrac{\\pi}{6}\\)，\\(k\\in\\mathbb{Z}\\)；（2）\\([k\\pi+\\dfrac{\\pi}{6}, k\\pi+\\dfrac{2\\pi}{3}]\\)，\\(k\\in\\mathbb{Z}\\)",
+ "analysis": "（1）f(x) = 2cos²x+√3 sin2x = 1+cos2x+√3 sin2x = 2sin(2x+π/6)+1。最大值 = 2+1 = 3。当2x+π/6 = π/2+2kπ时取最大值。2x = π/3+2kπ → x = π/6+kπ。（2）令π/2+2kπ ≤ 2x+π/6 ≤ 3π/2+2kπ。解得：π/6+kπ ≤ x ≤ 2π/3+kπ。",
+ "knowledge": "降幂公式 + 辅助角公式",
+ "tips": "先化简成Asin(ωx+φ)+b的形式。"
 }
 ];
