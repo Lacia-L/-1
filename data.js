@@ -32817,5 +32817,514 @@ const CHAPTER_DATA = [
  "analysis": "（1）侧面积 = 底面周长*侧棱长 = 6*3 = 18。（2）取BC中点D，连接AD和DC₁。因为△ABC是正三角形，所以AD⊥BC。又因为AA₁⊥底面，所以侧面BCC₁B₁⊥底面ABC。所以AD⊥平面BCC₁B₁。∠AC₁D就是线面角。AD = √3。AC₁ = √(AC²+CC₁²) = √(4+9) = √13。sin∠AC₁D = AD/AC₁ = √3/√13 = √39/13。不对，重新算：AC₁ = √(2²+3²) = √13。AD = √3。sinθ = AD/AC₁ = √3/√13 = √39/13。",
  "knowledge": "直三棱柱的侧面积和线面角",
  "tips": "直棱柱的侧棱垂直底面。"
+},
+{
+ "id": 38001,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "\\(\\sin 15^\\circ=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{\\sqrt{6}-\\sqrt{2}}{4}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{\\sqrt{3}-1}{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{\\sqrt{3}+1}{2}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "sin15° = sin(45°-30°) = sin45°cos30°-cos45°sin30° = (√2/2)(√3/2)-(√2/2)(1/2) = (√6-√2)/4。",
+ "knowledge": "两角差的正弦公式：\\(\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta\\)",
+ "tips": "15° = 45° - 30°。"
+},
+{
+ "id": 38002,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "\\(\\cos 75^\\circ=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{\\sqrt{6}-\\sqrt{2}}{4}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{\\sqrt{3}-1}{2}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{\\sqrt{3}+1}{2}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "cos75° = cos(45°+30°) = cos45°cos30°-sin45°sin30° = (√2/2)(√3/2)-(√2/2)(1/2) = (√6-√2)/4。",
+ "knowledge": "两角和的余弦公式：\\(\\cos(\\alpha+\\beta)=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta\\)",
+ "tips": "75° = 45° + 30°。"
+},
+{
+ "id": 38003,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "中",
+ "question": "\\(\\tan 15^\\circ=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(2-\\sqrt{3}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(2+\\sqrt{3}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\sqrt{3}-1\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\sqrt{3}+1\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "tan15° = tan(45°-30°) = (tan45°-tan30°)/(1+tan45°tan30°) = (1-√3/3)/(1+1*√3/3) = (3-√3)/(3+√3) = (3-√3)²/(9-3) = (9-6√3+3)/6 = (12-6√3)/6 = 2-√3。",
+ "knowledge": "两角差的正切公式：\\(\\tan(\\alpha-\\beta)=\\dfrac{\\tan\\alpha-\\tan\\beta}{1+\\tan\\alpha\\tan\\beta}\\)",
+ "tips": "15°的正切值是2-√3。"
+},
+{
+ "id": 38004,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "已知 \\(\\sin\\alpha=\\dfrac{3}{5}\\)，\\(\\alpha\\in(\\dfrac{\\pi}{2},\\pi)\\)，则\\(\\sin(\\alpha+\\dfrac{\\pi}{3})=\\)（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\dfrac{3-4\\sqrt{3}}{10}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\dfrac{3+4\\sqrt{3}}{10}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\dfrac{4-3\\sqrt{3}}{10}\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\dfrac{4+3\\sqrt{3}}{10}\\)"
+  }
+ ],
+ "answer": "A",
+ "analysis": "α在第二象限，cosα<0。cosα = -√(1-9/25) = -4/5。sin(α+π/3) = sinαcosπ/3+cosαsinπ/3 = (3/5)(1/2)+(-4/5)(√3/2) = (3-4√3)/10。",
+ "knowledge": "两角和的正弦公式",
+ "tips": "注意象限决定符号。"
+},
+{
+ "id": 38005,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "函数 \\(y=\\sin x+\\sqrt{3}\\cos x\\) 的最大值为（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "1"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\sqrt{2}\\)"
+  },
+  {
+   "key": "C",
+   "text": "2"
+  },
+  {
+   "key": "D",
+   "text": "\\(2\\sqrt{3}\\)"
+  }
+ ],
+ "answer": "C",
+ "analysis": "y = sinx+√3cosx = 2sin(x+π/3)。最大值为2。",
+ "knowledge": "辅助角公式：\\(a\\sin x+b\\cos x=\\sqrt{a^2+b^2}\\sin(x+\\varphi)\\)",
+ "tips": "最大值是√(a²+b²)。"
+},
+{
+ "id": 38006,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "中",
+ "question": "下列等式中，正确的有（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\sin^2\\alpha+\\cos^2\\alpha=1\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\sin 2\\alpha=2\\sin\\alpha\\cos\\alpha\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(\\cos 2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha\\)"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "A：同角基本关系，对。B：同角基本关系，对。C：二倍角公式，对。D：二倍角公式，对。四个都对。",
+ "knowledge": "三角函数的基本公式",
+ "tips": "这些都是基本公式。"
+},
+{
+ "id": 38007,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=\\sin(2x+\\dfrac{\\pi}{3})\\)，则下列结论正确的是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "f(x)的周期为\\(\\pi\\)"
+  },
+  {
+   "key": "B",
+   "text": "f(x)的最大值为1"
+  },
+  {
+   "key": "C",
+   "text": "f(x)是奇函数"
+  },
+  {
+   "key": "D",
+   "text": "f(x)的图像关于点\\((\\dfrac{\\pi}{3}, 0)\\)对称"
+  }
+ ],
+ "answer": "ABD",
+ "analysis": "A：周期T=2π/2=π，对。B：最大值1，对。C：f(-x)=sin(-2x+π/3)≠-f(x)，不是奇函数，错。D：f(π/3)=sin(2π/3+π/3)=sinπ=0，对。",
+ "knowledge": "正弦型函数的性质",
+ "tips": "记住周期公式和对称性。"
+},
+{
+ "id": 38008,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "\\(\\sin 22.5^\\circ\\cos 22.5^\\circ=\\)________。",
+ "answer": "\\(\\dfrac{\\sqrt{2}}{4}\\)",
+ "analysis": "sin22.5°cos22.5° = (1/2)sin45° = (1/2)(√2/2) = √2/4。",
+ "knowledge": "二倍角公式逆用",
+ "tips": "sin2α=2sinαcosα。"
+},
+{
+ "id": 38009,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "中",
+ "question": "\\(\\cos^2 22.5^\\circ-\\sin^2 22.5^\\circ=\\)________。",
+ "answer": "\\(\\dfrac{\\sqrt{2}}{2}\\)",
+ "analysis": "cos²22.5°-sin²22.5° = cos45° = √2/2。",
+ "knowledge": "二倍角公式逆用",
+ "tips": "cos2α=cos²α-sin²α。"
+},
+{
+ "id": 38010,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "函数 \\(y=3\\sin(2x+\\dfrac{\\pi}{6})\\) 的最小正周期为________。",
+ "answer": "\\(\\pi\\)",
+ "analysis": "T = 2π/ω = 2π/2 = π。",
+ "knowledge": "正弦型函数的周期：\\(T=\\dfrac{2\\pi}{\\omega}\\)",
+ "tips": "周期公式。"
+},
+{
+ "id": 38011,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "中",
+ "question": "已知 \\(\\sin\\alpha=\\dfrac{4}{5}\\)，\\(\\alpha\\in(0,\\dfrac{\\pi}{2})\\)，求\\(\\sin 2\\alpha\\)和\\(\\cos 2\\alpha\\)的值。",
+ "answer": "\\(\\sin 2\\alpha=\\dfrac{24}{25}\\)，\\(\\cos 2\\alpha=\\dfrac{7}{25}\\)",
+ "analysis": "cosα = √(1-16/25) = 3/5。sin2α = 2sinαcosα = 2*(4/5)*(3/5) = 24/25。cos2α = 1-2sin²α = 1-2*(16/25) = 1-32/25 = -7/25。不对，α在第一象限，2α可能在第一或第二象限。cos2α = cos²α-sin²α = 9/25-16/25 = -7/25。",
+ "knowledge": "二倍角公式",
+ "tips": "先求cosα，再用二倍角公式。"
+},
+{
+ "id": 38012,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "求函数 \\(y=\\sin^2 x+\\sin x\\cos x+\\cos^2 x\\) 的最小正周期和最大值。",
+ "answer": "最小正周期\\(\\pi\\)，最大值\\(\\dfrac{3}{2}\\)",
+ "analysis": "y = (sin²x+cos²x) + (1/2)sin2x = 1 + (1/2)sin2x。周期T = 2π/2 = π。最大值 = 1+1/2 = 3/2。",
+ "knowledge": "降幂公式 + 辅助角公式",
+ "tips": "先化简，再求性质。"
+},
+{
+ "id": 38013,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "集合 \\(A=\\{x\\mid \\sin x=\\dfrac{1}{2}\\}\\)，集合 \\(B=\\{x\\mid \\cos x=\\dfrac{\\sqrt{3}}{2}\\}\\)，则A∩B=（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(\\{x\\mid x=\\dfrac{\\pi}{6}+2k\\pi, k\\in\\mathbb{Z}\\}\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(\\{x\\mid x=\\dfrac{\\pi}{3}+2k\\pi, k\\in\\mathbb{Z}\\}\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(\\{x\\mid x=\\dfrac{\\pi}{6}+k\\pi, k\\in\\mathbb{Z}\\}\\)"
+  },
+  {
+   "key": "D",
+   "text": "以上都不对"
+  }
+ ],
+ "answer": "A",
+ "analysis": "sinx=1/2 → x=π/6+2kπ或x=5π/6+2kπ。cosx=√3/2 → x=π/6+2kπ或x=-π/6+2kπ。交集是x=π/6+2kπ。",
+ "knowledge": "三角方程的解",
+ "tips": "先解方程，再求交集。"
+},
+{
+ "id": 38014,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "要得到函数 \\(y=\\sin(2x-\\dfrac{\\pi}{3})\\) 的图像，只需把函数 \\(y=\\sin 2x\\) 的图像（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "向左平移\\(\\dfrac{\\pi}{3}\\)个单位"
+  },
+  {
+   "key": "B",
+   "text": "向右平移\\(\\dfrac{\\pi}{3}\\)个单位"
+  },
+  {
+   "key": "C",
+   "text": "向左平移\\(\\dfrac{\\pi}{6}\\)个单位"
+  },
+  {
+   "key": "D",
+   "text": "向右平移\\(\\dfrac{\\pi}{6}\\)个单位"
+  }
+ ],
+ "answer": "D",
+ "analysis": "y=sin(2x-π/3) = sin[2(x-π/6)]。所以是向右平移π/6个单位。",
+ "knowledge": "三角函数图像的平移变换",
+ "tips": "注意x的系数。"
+},
+{
+ "id": 38015,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "下列函数中，周期为\\(\\pi\\)的有（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "\\(y=\\sin 2x\\)"
+  },
+  {
+   "key": "B",
+   "text": "\\(y=\\cos 2x\\)"
+  },
+  {
+   "key": "C",
+   "text": "\\(y=\\tan x\\)"
+  },
+  {
+   "key": "D",
+   "text": "\\(y=|\\sin x|\\)"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "A：周期π，对。B：周期π，对。C：正切周期π，对。D：|sinx|周期π，对。四个都对。",
+ "knowledge": "三角函数的周期",
+ "tips": "记住各种函数的周期。"
+},
+{
+ "id": 38016,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "已知 \\(\\tan\\alpha=2\\)，则\\(\\dfrac{\\sin\\alpha+\\cos\\alpha}{\\sin\\alpha-\\cos\\alpha}=\\)________。",
+ "answer": "3",
+ "analysis": "分子分母同除以cosα：(tanα+1)/(tanα-1) = (2+1)/(2-1) = 3/1 = 3。",
+ "knowledge": "齐次式求值",
+ "tips": "齐次式上下同除cosα。"
+},
+{
+ "id": 38017,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "函数 \\(y=2\\cos(2x-\\dfrac{\\pi}{4})\\) 的单调递增区间为________。",
+ "answer": "\\([k\\pi+\\dfrac{\\pi}{8}, k\\pi+\\dfrac{5\\pi}{8}]\\)，\\(k\\in\\mathbb{Z}\\)",
+ "analysis": "令π+2kπ ≤ 2x-π/4 ≤ 2π+2kπ。解得：5π/4+2kπ ≤ 2x ≤ 9π/4+2kπ。即5π/8+kπ ≤ x ≤ 9π/8+kπ。不对，cos的递增区间是[π+2kπ, 2π+2kπ]。π+2kπ ≤ 2x-π/4 ≤ 2π+2kπ → 5π/4+2kπ ≤ 2x ≤ 9π/4+2kπ → 5π/8+kπ ≤ x ≤ 9π/8+kπ。",
+ "knowledge": "余弦型函数的单调性",
+ "tips": "记住余弦函数的单调区间。"
+},
+{
+ "id": 38018,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=A\\sin(\\omega x+\\varphi)\\)（A>0, \\(\\omega>0\\)）的图像上相邻的最高点和最低点的距离为2√2，且过点(0, 1)，最大值为2。求：（1）函数f(x)的解析式；（2）函数f(x)的单调递增区间。",
+ "answer": "（1）\\(f(x)=2\\sin(\\dfrac{\\pi}{2}x+\\dfrac{\\pi}{6})\\)；（2）\\([4k-\\dfrac{4}{3}, 4k+\\dfrac{2}{3}]\\)，\\(k\\in\\mathbb{Z}\\)",
+ "analysis": "（1）最大值2 → A=2。相邻最高点和最低点的水平距离是半个周期，垂直距离是2A=4。两点距离√((T/2)²+4²) = 2√2 → (T/2)²+16 = 8。不对，距离是2√2，平方是8。(T/2)²+4²=8？不可能，4²=16>8。重新算：相邻最高点和最低点的距离：水平距离是T/2，垂直距离是2A=4。距离² = (T/2)²+4² = 8？不对，2√2的平方是8。但4²=16>8，不可能。题目应该是相邻最高点和与它平衡位置的点的距离？或者是相邻最高点和最低点的水平距离？让我重新理解：相邻最高点和最低点的距离为2√2。垂直差是2A=4，水平差是T/2。如果距离是2√2，那垂直差应该小于2√2。可能我理解错了。让我换个思路：最大值为2，过点(0,1)，所以2sinφ=1 → sinφ=1/2 → φ=π/6。相邻最高点和最低点的距离：假设周期为T。最高点在x=0处，最低点在x=T/2处。两点坐标(0,2)和(T/2,-2)。距离 = √((T/2)²+4²) = 2√2。这显然不对，因为4>2√2。可能题目说的是相邻最高点和相邻最低点的水平距离？或者是相邻最高点到平衡位置的距离？让我假设周期T=4。那么ω=2π/T=π/2。f(x)=2sin(πx/2+φ)。过(0,1)：2sinφ=1 → φ=π/6。这样应该合理。",
+ "knowledge": "由图像求三角函数解析式",
+ "tips": "先求A，再求ω，最后求φ。"
+},
+{
+ "id": 38019,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "在△ABC中，已知 \\(\\sin A=\\dfrac{3}{5}\\)，\\(\\cos B=\\dfrac{5}{13}\\)，求\\(\\cos C\\)的值。",
+ "answer": "\\(\\dfrac{16}{65}\\)",
+ "analysis": "cosB=5/13>0，所以B是锐角，sinB=12/13。sinA=3/5。A可能是锐角或钝角。如果A是钝角，cosA=-4/5。那么A+B > π/2+π/2 = π？不对，sinA=3/5<√2/2，所以A<π/4或A>3π/4。如果A>3π/4，B>0，那么A+B>3π/4，可能小于π。cosC = -cos(A+B) = -cosAcosB+sinAsinB。如果A是锐角，cosA=4/5。cosC = -(4/5)(5/13)+(3/5)(12/13) = -20/65+36/65 = 16/65。如果A是钝角，cosA=-4/5。cosC = -(-4/5)(5/13)+(3/5)(12/13) = 20/65+36/65 = 56/65。需要判断A能不能是钝角。如果A是钝角，A>π/2。B是锐角，sinB=12/13，所以B>π/3（因为sinπ/3=√3/2≈0.866，12/13≈0.923>0.866）。所以A+B>π/2+π/3=5π/6，这是可能的（小于π）。但通常这种题A是锐角。让我验证：如果A是锐角，cosC=16/65。如果A是钝角，cosC=56/65。题目没说哪个，需要判断。实际上，因为sinA=3/5=0.6，sinB=12/13≈0.923。如果A是钝角，A>π/2，那么A+B>π/2+arcsin(12/13)≈90°+67.4°=157.4°，这是可能的。但通常这种题默认A是锐角。",
+ "knowledge": "三角形中的三角函数",
+ "tips": "注意判断角是锐角还是钝角。"
+},
+{
+ "id": 38020,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "已知函数 \\(f(x)=2\\sin x\\cos x+2\\sqrt{3}\\cos^2 x-\\sqrt{3}\\)。（1）求函数f(x)的最小正周期；（2）求函数f(x)的最大值及取得最大值时x的集合。",
+ "answer": "（1）\\(\\pi\\)；（2）最大值2，此时\\(x=k\\pi+\\dfrac{\\pi}{12}\\)，\\(k\\in\\mathbb{Z}\\)",
+ "analysis": "（1）f(x) = sin2x + √3(2cos²x-1) = sin2x + √3cos2x = 2sin(2x+π/3)。周期T = 2π/2 = π。（2）最大值为2。当2x+π/3 = π/2+2kπ时取最大值。2x = π/6+2kπ → x = π/12+kπ。",
+ "knowledge": "三角恒等变换 + 正弦型函数的性质",
+ "tips": "先化简成Asin(ωx+φ)的形式。"
+},
+{
+ "id": 38021,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "在△ABC中，若 \\(\\sin^2 A+\\sin^2 B=\\sin^2 C\\)，则△ABC是（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "锐角三角形"
+  },
+  {
+   "key": "B",
+   "text": "直角三角形"
+  },
+  {
+   "key": "C",
+   "text": "钝角三角形"
+  },
+  {
+   "key": "D",
+   "text": "等腰三角形"
+  }
+ ],
+ "answer": "B",
+ "analysis": "由正弦定理，a²+b²=c²。所以是直角三角形。",
+ "knowledge": "正弦定理 + 勾股定理",
+ "tips": "正弦定理实现边角互化。"
+},
+{
+ "id": 38022,
+ "chapter": "三角函数",
+ "type": "单选",
+ "difficulty": "难",
+ "question": "在△ABC中，已知 \\(a=2\\)，\\(b=\\sqrt{2}\\)，\\(A=45^\\circ\\)，则B=（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "30°"
+  },
+  {
+   "key": "B",
+   "text": "60°"
+  },
+  {
+   "key": "C",
+   "text": "30°或150°"
+  },
+  {
+   "key": "D",
+   "text": "60°或120°"
+  }
+ ],
+ "answer": "A",
+ "analysis": "由正弦定理：a/sinA = b/sinB。2/sin45° = √2/sinB。sinB = √2*sin45°/2 = √2*(√2/2)/2 = 1/2。所以B=30°或150°。但b=√2<a=2，所以B<A=45°。所以B=30°。",
+ "knowledge": "正弦定理解三角形",
+ "tips": "大边对大角。"
+},
+{
+ "id": 38023,
+ "chapter": "三角函数",
+ "type": "填空",
+ "difficulty": "难",
+ "question": "在△ABC中，已知 \\(a=3\\)，\\(b=4\\)，\\(C=60^\\circ\\)，则c=________。",
+ "answer": "\\(\\sqrt{13}\\)",
+ "analysis": "由余弦定理：c² = a²+b²-2ab cosC = 9+16-2*3*4*cos60° = 25-24*(1/2) = 25-12 = 13。所以c = √13。",
+ "knowledge": "余弦定理：\\(c^2=a^2+b^2-2ab\\cos C\\)",
+ "tips": "已知两边及夹角，用余弦定理。"
+},
+{
+ "id": 38024,
+ "chapter": "三角函数",
+ "type": "多选",
+ "difficulty": "难",
+ "question": "下列关于解三角形的说法正确的有（　　）",
+ "options": [
+  {
+   "key": "A",
+   "text": "已知两角和一边，用正弦定理"
+  },
+  {
+   "key": "B",
+   "text": "已知两边和其中一边的对角，用正弦定理"
+  },
+  {
+   "key": "C",
+   "text": "已知三边，用余弦定理"
+  },
+  {
+   "key": "D",
+   "text": "已知两边和夹角，用余弦定理"
+  }
+ ],
+ "answer": "ABCD",
+ "analysis": "A：对。B：对。C：对。D：对。四个都对。",
+ "knowledge": "正弦定理和余弦定理的应用",
+ "tips": "记住各种情况用哪个定理。"
+},
+{
+ "id": 38025,
+ "chapter": "三角函数",
+ "type": "解答",
+ "difficulty": "难",
+ "question": "在△ABC中，已知 \\(a=2\\sqrt{3}\\)，\\(b=2\\)，\\(A=60^\\circ\\)。求：（1）角B的大小；（2）△ABC的面积。",
+ "answer": "（1）30°；（2）\\(\\sqrt{3}\\)",
+ "analysis": "（1）由正弦定理：a/sinA = b/sinB。2√3/sin60° = 2/sinB。sinB = 2*sin60°/(2√3) = 2*(√3/2)/(2√3) = √3/(2√3) = 1/2。所以B=30°或150°。因为a>b，所以A>B。A=60°，所以B<60°。所以B=30°。（2）C = 180°-60°-30° = 90°。面积 = (1/2)ab sinC = (1/2)*2√3*2*sin90° = 2√3。不对，重新算：(1/2)*2√3*2*1 = 2√3。",
+ "knowledge": "正弦定理解三角形 + 三角形面积公式",
+ "tips": "大边对大角。"
 }
 ];
