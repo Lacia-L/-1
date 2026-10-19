@@ -1402,6 +1402,18 @@ function qcard(q,opt){
 
   opt=opt||{};
 
+  // 兼容两种题目格式
+  q.stem = q.stem || q.question || '';
+  q.ans = q.ans || q.answer || '';
+  q.sol = q.sol || q.analysis || '';
+  q.diff = q.diff || q.difficulty || '';
+  q.kp = q.kp || q.knowledge || '';
+  // 统一opts格式：新格式是[{key:A,text:...}]，旧格式是["选项1",...]
+  if(!q.opts && q.options){
+    q.opts = q.options.map(function(o){return o.text;});
+  }
+  q.opts = q.opts || [];
+
   var rt=RT[q.id]||(RT[q.id]={});
 
   var letters=['A','B','C','D'];
