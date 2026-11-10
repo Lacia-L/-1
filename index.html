@@ -886,6 +886,29 @@ html, body {
     display: block !important;
   }
 }
+/* ===== 拍照出同类题 ===== */
+.vc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin:18px 0 6px}
+.vc-head h2{font-size:17px;margin:0}
+.vc-head p{margin:4px 0 0;font-size:12.5px;color:var(--muted);max-width:44em;line-height:1.7}
+.vc-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:10px 0 4px}
+.vc-actions input[type=file]{display:none}
+.vc-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:14px}
+.vc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.vc-no{font-size:11px;color:var(--muted);letter-spacing:.08em}
+.vc-thumb{max-width:100%;max-height:200px;object-fit:contain;border:1px solid var(--line);border-radius:10px;display:block;margin-bottom:10px;background:var(--surface2)}
+.vc-kp{display:flex;gap:8px;align-items:center;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+.vc-kpin{font:inherit;font-size:13px;color:var(--ink);background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:9px 10px;min-width:200px;flex:1}
+.vc-kp select{font:inherit;font-size:13px;color:var(--ink);background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;max-width:100%}
+.vc-q{border-top:1px dashed var(--line);margin-top:12px;padding-top:12px}
+.vc-q .lab{font-size:11px;color:var(--muted);letter-spacing:.06em}
+.vc-qs{font-size:14.5px;line-height:1.75;margin:6px 0 10px;white-space:pre-wrap;word-break:break-word}
+.vc-opt{display:flex;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;cursor:pointer;font-size:14px;background:var(--surface2)}
+.vc-opt.right{border-color:var(--green);background:rgba(52,211,153,.12)}
+.vc-opt.wrong{border-color:var(--red);background:rgba(248,113,113,.12)}
+.vc-sol{display:none;margin-top:10px;padding:12px;border-left:2px solid var(--cyan);background:var(--surface2);font-size:13.5px;line-height:1.8}
+.vc-sol.show{display:block}
+.vc-empty{padding:28px 16px;text-align:center;color:var(--muted);font-size:13px;border:1px dashed var(--line);border-radius:14px}
+
 </style>
 
 </head>
@@ -917,6 +940,8 @@ html, body {
   <div class="side-label">主板块</div>
 
   <div class="nav-item active" id="nav-gaokao"><span class="nm">高考真题</span><span class="cnt" id="cnt-gaokao">0</span></div>
+
+  <div class="nav-item" id="nav-variant"><span class="nm">拍照出同类题</span><span class="cnt" id="cnt-variant">0</span></div>
 
   <div class="side-label">章节练习</div>
 
@@ -1618,21 +1643,31 @@ function render(){
 
   var onGaokao=state.view==='gaokao';
 
-  document.getElementById('nav-gaokao').classList.toggle('active',onGaokao);
+  var onVariant=state.view==='variant';
+
+  var navV=document.getElementById('nav-variant');
+
+  if(navV) navV.classList.toggle('active',onVariant);
+
+  var cntV=document.getElementById('cnt-variant');
+
+  if(cntV) cntV.textContent=VSTATE.items.length;
+
+  document.getElementById('nav-gaokao').classList.toggle('active',onGaokao&&!onVariant);
 
   var chItems=document.querySelectorAll('#side-chapters .nav-item');
 
   Array.prototype.forEach.call(chItems,function(el){
 
-    el.classList.toggle('active',!onGaokao && el.getAttribute('data-chap')===state.chap);
+    el.classList.toggle('active',!onGaokao && !onVariant && el.getAttribute('data-chap')===state.chap);
 
   });
 
-  document.getElementById('toolbar-gaokao').style.display=onGaokao?'flex':'none';
+  document.getElementById('toolbar-gaokao').style.display=(onGaokao&&!onVariant)?'flex':'none';
 
-  document.getElementById('toolbar-chapter').style.display=onGaokao?'none':'flex';
+  document.getElementById('toolbar-chapter').style.display=(onGaokao||onVariant)?'none':'flex';
 
-  document.getElementById('stats-row').style.display=onGaokao?'grid':'none';
+  document.getElementById('stats-row').style.display=(onGaokao&&!onVariant)?'grid':'none';
 
 
 
@@ -1641,6 +1676,20 @@ function render(){
   var i,html=[];
 
 
+
+  if(onVariant){
+
+    document.getElementById('page-title').textContent='拍照出同类题';
+
+    document.getElementById('page-sub').textContent='照片对照 · 选题型 · 库内同类真题 + 换数变式';
+
+    document.getElementById('count').innerHTML='待处理 <b>'+VSTATE.items.length+'</b> 题';
+
+    list.innerHTML=vPanelHTML();
+
+    return;
+
+  }
 
   if(onGaokao){
 
@@ -2079,6 +2128,8 @@ function route(){
   if(h.indexOf('#chapter/')===0){
     state.view='chapter';
     state.chap=decodeURIComponent(h.split('/')[1]||'');
+  }else if(h.indexOf('#variant')===0){
+    state.view='variant';
   }else{state.view='gaokao';}
   state.usedVariants=[];state.variantBatch=null;RT={};
   hideBar();
@@ -2148,6 +2199,323 @@ document.getElementById('f-search').addEventListener('input',function(ev){state.
 document.getElementById('theme-toggle').addEventListener('click',toggleTheme);
 
 
+
+
+/* ================= 拍照出同类题 ================= */
+var VKEY='gmath_variant_v1';
+var VSTATE={items:[], out:{}, ans:{}};
+
+function vLoad(){
+  try{
+    var raw=localStorage.getItem(VKEY);
+    if(raw){ var arr=JSON.parse(raw)||[]; VSTATE.items=arr.map(function(x){return {img:x.img||'',kp:x.kp||''};}); }
+  }catch(e){}
+}
+function vSave(){
+  try{ localStorage.setItem(VKEY, JSON.stringify(VSTATE.items.map(function(x){return {img:x.img,kp:x.kp};}))); }catch(e){}
+}
+
+function vKpList(){
+  var out=[],seen={};
+  function add(k){ if(k && !seen[k]){ seen[k]=1; out.push(k); } }
+  if(typeof QUESTION_DATA!=='undefined') QUESTION_DATA.forEach(function(q){add(q.kp);});
+  if(typeof CHAPTER_DATA!=='undefined') CHAPTER_DATA.forEach(function(q){add(q.kp);});
+  out.sort();
+  return out;
+}
+
+function vPool(kp){
+  var pool=[];
+  if(typeof QUESTION_DATA!=='undefined') pool=pool.concat(QUESTION_DATA.filter(function(q){return q.kp===kp;}));
+  if(typeof CHAPTER_DATA!=='undefined') pool=pool.concat(CHAPTER_DATA.filter(function(q){return q.kp===kp;}));
+  return pool;
+}
+
+function vShuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+
+function vPick(kp,n){
+  var pool=vShuffle(vPool(kp).slice());
+  if(pool.length<n){
+    var cat=String(kp).slice(0,2);
+    var near=vShuffle(vAllQ().filter(function(q){ return q.kp!==kp && String(q.kp).indexOf(cat)===0; }));
+    pool=pool.concat(near);
+  }
+  if(pool.length<n){
+    pool=pool.concat(vShuffle(vAllQ().filter(function(q){ return q.kp!==kp; })));
+  }
+  return pool.slice(0,n);
+}
+
+function vAllQ(){
+  var all=[];
+  if(typeof QUESTION_DATA!=='undefined') all=all.concat(QUESTION_DATA);
+  if(typeof CHAPTER_DATA!=='undefined') all=all.concat(CHAPTER_DATA);
+  return all;
+}
+
+/* 知识点 → 换数引擎（按关键词） */
+function vEngineFor(kp){
+  var k=String(kp);
+  if(/等比/.test(k)) return 'geom';
+  if(/等差|数列/.test(k)) return 'arith';
+  if(/概率|古典概型|分布/.test(k)) return 'prob';
+  if(/导数|切线|极值/.test(k)) return 'deriv';
+  if(/三角函数|正弦|余弦|诱导|恒等/.test(k)) return 'trig';
+  if(/不等式|线性规划/.test(k)) return 'ineq';
+  if(/斜率|直线|倾斜角/.test(k)) return 'line';
+  if(/二次函数|最值/.test(k)) return 'quadFun';
+  if(/二次方程|解方程|一元二次/.test(k)) return 'quadEq';
+  return '';
+}
+
+/* ---- 换数变式引擎 ---- */
+function vrnd(a,b){return Math.floor(Math.random()*(b-a+1))+a;}
+function vpick(a){return a[Math.floor(Math.random()*a.length)];}
+function vcomb(n,k){ if(k<0||k>n) return 0; var r=1,i; for(i=0;i<k;i++) r=r*(n-i)/(i+1); return Math.round(r); }
+function vfrac(n,d){ if(d<0){n=-n;d=-d;} function g(a,b){a=Math.abs(a);b=Math.abs(b);while(b){var t=b;b=a%b;a=t;}return a||1;} var gg=g(n,d); n/=gg; d/=gg; return d===1?String(n):n+"/"+d; }
+function vpoly2(a,b,c){
+  var s = a===1?"x²":(a===-1?"−x²":a+"x²");
+  if(b!==0) s += (b>0?" + ":" − ") + (Math.abs(b)===1?"":Math.abs(b)) + "x";
+  if(c!==0) s += (c>0?" + ":" − ") + Math.abs(c);
+  return s;
+}
+var VGEN={
+  quadEq:{label:'一元二次方程',fn:function(){
+    var a=vpick([1,1,2]),r1=vpick([-5,-4,-3,-2,-1,1,2,3,4]),r2=vpick([-6,-5,-4,-3,-2,-1,1,2,3,4,5]);
+    if(r2===r1) r2=r1+1;
+    var b=-a*(r1+r2), c=a*r1*r2, lo=Math.min(r1,r2), hi=Math.max(r1,r2);
+    return {stem:'解方程 '+vpoly2(a,b,c)+' = 0', ans:'x₁ = '+lo+'，x₂ = '+hi+'',
+      sol:'分解为 '+a+'(x'+(lo<0?' + '+Math.abs(lo):' − '+lo)+')(x'+(hi<0?' + '+Math.abs(hi):' − '+hi)+') = 0，得 x₁ = '+lo+'，x₂ = '+hi+'。'};
+  }},
+  quadFun:{label:'二次函数最值',fn:function(){
+    var a=vpick([1,1,-1,2,-2]),h=vrnd(-4,4),k=vrnd(-9,9);
+    var b=-2*a*h,c=a*h*h+k,isMin=a>0;
+    return {stem:'已知 f(x) = '+vpoly2(a,b,c)+'，求它的'+(isMin?'最小值':'最大值')+'，并写出取到时的 x。',
+      ans:(isMin?'最小值':'最大值')+' = '+k+'，此时 x = '+h,
+      sol:'配方得 f(x) = '+a+'(x'+(h<0?' + '+Math.abs(h):' − '+h)+')²'+(k===0?'':(k>0?' + '+k:' − '+Math.abs(k)))+'，顶点 ('+h+', '+k+')。'};
+  }},
+  ineq:{label:'一元二次不等式',fn:function(){
+    var a=vpick([1,1,2]),r1=vrnd(-6,2),r2=r1+vrnd(1,7);
+    var b=-a*(r1+r2),c=a*r1*r2,lt=Math.random()<0.5;
+    return {stem:'解不等式 '+vpoly2(a,b,c)+' '+(lt?'< 0':'> 0'),
+      ans:lt?(r1+' < x < '+r2):('x < '+r1+' 或 x > '+r2),
+      sol:'先求根 x₁ = '+r1+'、x₂ = '+r2+'，开口向上，'+(lt?'两根之间为负。':'两根之外为正。')};
+  }},
+  arith:{label:'等差数列',fn:function(){
+    var a1=vrnd(-6,10),d=vpick([-4,-3,-2,-1,1,2,3,4]),n=vrnd(6,14);
+    var an=a1+(n-1)*d,s=n*(a1+an)/2;
+    return {stem:'等差数列 {aₙ} 中 a₁ = '+a1+'，公差 d = '+d+'，求 a_'+n+' 与 S_'+n+'。',
+      ans:'a_'+n+' = '+an+'，S_'+n+' = '+s,
+      sol:'a_'+n+' = a₁+('+n+'−1)d = '+an+'；S_'+n+' = n(a₁+a_'+n+')/2 = '+s+'。'};
+  }},
+  geom:{label:'等比数列',fn:function(){
+    var a1=vpick([1,1,2,3,-2]),q=vpick([2,3,-2,-3]),n=vrnd(4,8);
+    var an=a1*Math.pow(q,n-1),s=a1*(Math.pow(q,n)-1)/(q-1);
+    return {stem:'等比数列 {bₙ} 中 b₁ = '+a1+'，公比 q = '+q+'，求 b_'+n+' 与 T_'+n+'。',
+      ans:'b_'+n+' = '+an+'，T_'+n+' = '+s,
+      sol:'b_'+n+' = b₁q^('+(n-1)+') = '+an+'；T_'+n+' = b₁(1−q^n)/(1−q) = '+s+'。'};
+  }},
+  prob:{label:'概率（取球）',fn:function(){
+    var N=vrnd(8,14),R=vrnd(2,Math.min(6,N-3)),k=vrnd(2,3);
+    var tot=vcomb(N,k),none=vcomb(N-R,k),f=vfrac(tot-none,tot);
+    return {stem:'袋中有 '+N+' 个球，其中 '+R+' 个红球，其余为白球。任取 '+k+' 个，求「至少有 1 个红球」的概率。',
+      ans:f, sol:'总数 C('+N+','+k+') = '+tot+'；全白的取法 C('+(N-R)+','+k+') = '+none+'；所求 = 1 − '+none+'/'+tot+' = '+f+'。'};
+  }},
+  deriv:{label:'多项式求导',fn:function(){
+    var a=vpick([1,2,-1]),b=vpick([1,-2,3]),c=vrnd(-5,5),x0=vrnd(-3,3),d=vrnd(-6,6);
+    var f=a+'x³'+(b>0?' + '+b:' − '+Math.abs(b))+'x²'+(c>0?' + '+c+'x':' − '+Math.abs(c)+'x')+(d>0?' + '+d:' − '+Math.abs(d));
+    var val=3*a*x0*x0+2*b*x0+c;
+    return {stem:'已知 f(x) = '+f+'，求 f′('+x0+')。',
+      ans:'f′('+x0+') = '+val,
+      sol:'f′(x) = '+3*a+'x² + '+(2*b)+'x + '+c+'，代入 x = '+x0+' 得 '+val+'。'};
+  }},
+  line:{label:'直线的斜率',fn:function(){
+    var x1=vrnd(-5,5),y1=vrnd(-5,5),dx=vpick([1,2,-1,-2,3,-3]),k=vpick([-3,-2,-1,1,2,3,4]);
+    var x2=x1+dx,y2=y1+k*dx,b=y1-k*x1;
+    return {stem:'已知 A('+x1+', '+y1+')、B('+x2+', '+y2+')，求直线 AB 的斜率 k 与方程。',
+      ans:'k = '+k+'，y = '+k+'x'+(b>=0?' + '+b:' − '+Math.abs(b)),
+      sol:'k = ('+y2+'−'+y1+')/('+x2+'−'+x1+') = '+k+'；代 A 点得 b = '+b+'。'};
+  }},
+  trig:{label:'特殊角三角函数',fn:function(){
+    var T=[[30,'1/2','√3/2','√3/3'],[45,'√2/2','√2/2','1'],[60,'√3/2','1/2','√3']];
+    var t=vpick(T),w=vpick(['sin','cos','tan']),val=w==='sin'?t[1]:(w==='cos'?t[2]:t[3]);
+    return {stem:'求 '+w+t[0]+'° 的值。', ans:w+' '+t[0]+'° = '+val,
+      sol:t[0]+'°：sin = '+t[1]+'，cos = '+t[2]+'，tan = '+t[3]+'。'};
+  }}
+};
+
+var VKP_GEN={
+  '数列':['arith','geom'],
+  '概率统计':['prob'],
+  '函数与导数':['deriv','quadFun'],
+  '三角函数':['trig'],
+  '不等式':['ineq'],
+  '直线与方程':['line'],
+  '解析几何（圆锥曲线）':['line'],
+  '集合与简易逻辑':['quadEq'],
+  '复数':[]
+};
+
+/* ---- 生成 ---- */
+function vGenerate(i){
+  var it=VSTATE.items[i], kp=it.kp;
+  if(!kp){ if(typeof toast==='function') toast('先选这道题考的知识点'); return; }
+  var reals=vPick(kp,3).map(function(q){
+    return {kind:'real', id:q.id, stem:q.stem||q.question||'', opts:q.opts||q.options||[],
+            ans:q.ans||q.answer||'', sol:q.sol||q.analysis||'', type:q.type||''};
+  });
+  var eng=[];
+  var ek=vEngineFor(kp);
+  if(ek && VGEN[ek]){ var v=VGEN[ek].fn(); v.label=VGEN[ek].label; eng.push(v); }
+  VSTATE.out[i]={kp:kp, reals:reals, eng:eng.slice(0,1)};
+  VSTATE.ans={};
+  render();
+}
+
+/* ---- 渲染 ---- */
+function vPanelHTML(){
+  var kps=vKpList();
+  var h='<datalist id="vc-kp-list">'+kps.map(function(k){return '<option value="'+esc(k)+'">';}).join('')+'</datalist>';
+  h+='<div class="vc-head"><div><h2>拍一道，出三道同类</h2><p>照片只用来对照原题。选框里选它考的知识点，从题库里挑 3 道同知识点真题；再由规则引擎按同一题型换数字重出 1 道，答案和步骤都给。</p></div></div>';
+  h+='<div class="vc-actions"><label class="btn btn-primary btn-sm" for="vc-file">拍照 / 选图</label>'+
+     '<input id="vc-file" type="file" accept="image/*" multiple>'+
+     '<button class="btn btn-ghost btn-sm" data-vadd="1">手动加一题</button>'+
+     '<button class="btn btn-ghost btn-sm" data-vclear="1" style="margin-left:auto">清空</button></div>';
+  if(!VSTATE.items.length){
+    h+='<div class="vc-empty">还没有题目。点「拍照 / 选图」，一张照片算一题，可以一次选多张。</div>';
+    return h;
+  }
+
+  VSTATE.items.forEach(function(it,idx){
+    var sel=it.kp||'';
+    h+='<div class="vc-card"><div class="vc-top"><span class="vc-no">第 '+(idx+1)+' 题</span>'+
+       '<button class="btn btn-ghost btn-sm" data-vdel="'+idx+'">删除</button></div>';
+    if(it.img) h+='<img class="vc-thumb" src="'+it.img+'">';
+    h+='<div class="vc-kp">考的是<input class="vc-kpin" list="vc-kp-list" data-vkp="'+idx+'" value="'+esc(sel)+'" placeholder="输入或选择知识点，如 等差数列">'+
+       '<button class="btn btn-primary btn-sm" data-vgen="'+idx+'" style="margin-left:auto">出 3 道同类题</button></div>';
+    var out=VSTATE.out[idx];
+    if(out){
+      h+='<div class="vc-out">';
+      out.reals.forEach(function(q,qi){
+        var key=idx+'-r'+qi, picked=VSTATE.ans[key];
+        h+='<div class="vc-q"><div class="lab">同类真题 '+(qi+1)+(q.type?' · '+q.type:'')+'</div>';
+        h+='<div class="vc-qs">'+renderTex(q.stem)+'</div>';
+        if(q.opts && q.opts.length===4 && q.type==='单选'){
+          var L=['A','B','C','D'];
+          h+='<div class="vc-opts">'+q.opts.map(function(o,oi){
+            var cls='vc-opt';
+            if(picked!==undefined){ if(L[oi]===q.ans) cls+=' right'; else if(oi===picked) cls+=' wrong'; }
+            return '<div class="'+cls+'" data-vopt="'+key+'" data-vo="'+oi+'"><b style="min-width:16px">'+L[oi]+'</b><span>'+renderTex(o)+'</span></div>';
+          }).join('')+'</div>';
+        }
+        h+='<div class="vc-sol'+(picked!==undefined?' show':'')+'" id="vs-'+key+'"><b>答案：</b>'+esc(q.ans)+'<br><b>解析：</b>'+renderTex(q.sol)+'</div>';
+        h+='<div style="margin-top:8px"><button class="btn btn-ghost btn-sm" data-vshowsol="'+key+'">看答案与解析</button></div>';
+        h+='</div>';
+      });
+      out.eng.forEach(function(v){
+        var key=idx+'-e0', picked=VSTATE.ans[key];
+        h+='<div class="vc-q"><div class="lab">换数变式 · '+v.label+'</div><div class="vc-qs">'+renderTex(v.stem)+'</div>'+
+           '<div class="vc-sol'+(picked!==undefined?' show':'')+'" id="vs-'+key+'"><b>答案：</b>'+renderTex(v.ans)+'<br><b>步骤：</b>'+renderTex(v.sol)+'</div>'+
+           '<div style="margin-top:8px"><button class="btn btn-ghost btn-sm" data-vshowsol="'+key+'">看答案与步骤</button></div></div>';
+      });
+      if(!out.reals.length && !out.eng.length) h+='<div class="vc-empty" style="margin-top:10px">题库里这个知识点暂时没有可用的题。</div>';
+      h+='<div style="margin-top:10px"><button class="btn btn-ghost btn-sm" data-vgen="'+idx+'">再出一批</button></div>';
+      h+='</div>';
+    }
+    h+='</div>';
+  });
+  return h;
+}
+
+/* ---- 事件 ---- */
+function vBind(){
+  var doc=document;
+  doc.addEventListener('change', function(e){
+    var f=e.target;
+    if(f && f.id==='vc-file'){
+      var files=[];
+      for(var i=0;i<f.files.length;i++) files.push(f.files[i]);
+      files.forEach(function(file){
+        var it={img:'',kp:''};
+        VSTATE.items.push(it);
+        var idx=VSTATE.items.length-1;
+        var fr=new FileReader();
+        fr.onload=function(ev){
+          var img=new Image();
+          img.onload=function(){
+            var sc=Math.min(1,640/img.width);
+            var cv=doc.createElement('canvas');
+            cv.width=Math.round(img.width*sc); cv.height=Math.round(img.height*sc);
+            cv.getContext('2d').drawImage(img,0,0,cv.width,cv.height);
+            VSTATE.items[idx].img=cv.toDataURL('image/jpeg',.6);
+            vSave(); render();
+          };
+          img.src=ev.target.result;
+        };
+        fr.readAsDataURL(file);
+      });
+      f.value='';
+      vSave(); render();
+      if(typeof toast==='function') toast('照片进来了，选一下它考的知识点');
+      return;
+    }
+    if(f && f.getAttribute && f.getAttribute('data-vkp')!==null){
+      var i=+f.getAttribute('data-vkp');
+      VSTATE.items[i].kp=f.value.trim(); VSTATE.out[i]=null;
+      vSave();
+    }
+  });
+
+  doc.addEventListener('click', function(e){
+    var t=e.target.closest('[data-vadd],[data-vclear],[data-vdel],[data-vgen],[data-vopt],[data-vshowsol]');
+    if(!t) return;
+    if(t.getAttribute('data-vadd')!==null){
+      VSTATE.items.push({img:'',kp:''}); vSave(); render();
+      if(typeof toast==='function') toast('加了一题，写清知识点就能出题');
+      return;
+    }
+    if(t.getAttribute('data-vclear')!==null){
+      if(!confirm('清空这一页的题目？照片也会删掉。')) return;
+      VSTATE.items=[]; VSTATE.out={}; VSTATE.ans={}; vSave(); render(); return;
+    }
+    if(t.getAttribute('data-vdel')!==null){
+      var di=+t.getAttribute('data-vdel');
+      VSTATE.items.splice(di,1);
+      VSTATE.out={}; VSTATE.ans={};
+      vSave(); render(); return;
+    }
+    if(t.getAttribute('data-vgen')!==null){ vGenerate(+t.getAttribute('data-vgen')); return; }
+    if(t.getAttribute('data-vopt')!==null){
+      var key=t.getAttribute('data-vopt'), vo=+t.getAttribute('data-vo');
+      if(VSTATE.ans[key]!==undefined) return;
+      VSTATE.ans[key]=vo;
+      var parts=key.split('-'), idx=+parts[0], qi=+parts[1].slice(1);
+      var out=VSTATE.out[idx];
+      var q=out&&out.reals[qi];
+      var L=['A','B','C','D'];
+      var ok=q && L[vo]===q.ans;
+      render();
+      if(typeof toast==='function') toast(ok?'对。这题可以过了。':'错在这儿正好，看解析把坑填上。');
+      if(ok && q && q.type==='填空'){}
+      return;
+    }
+    if(t.getAttribute('data-vshowsol')!==null){
+      var sid='vs-'+t.getAttribute('data-vshowsol');
+      var box=doc.getElementById(sid);
+      if(box){ box.classList.toggle('show'); t.textContent=box.classList.contains('show')?'收起答案':'看答案'; }
+      return;
+    }
+  });
+}
+
+vLoad();
+
+vBind();
+
+document.getElementById('nav-variant').addEventListener('click',function(){
+  location.hash='#variant';
+  if(typeof closeDrawer==='function') closeDrawer();
+});
 
 /* ========== 启动 ========== */
 
